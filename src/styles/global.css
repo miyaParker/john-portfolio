@@ -1,3 +1,65 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+    font-family: 'Calibre';
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+    font-named-instance: 'Bold';
+    src: url('/fonts/Calibre/Calibre-Bold.woff2') format("woff2");
+}
+
+@font-face {
+    font-family: 'Calibre';
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+    font-named-instance: 'Medium';
+    src: url('/fonts/Calibre/Calibre-Medium.woff2') format("woff2");
+}
+
+@font-face {
+    font-family: 'Calibre';
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+    font-named-instance: 'Regular';
+    src: url('/fonts/Calibre/Calibre-Regular.woff2') format("woff2");
+}
+
+@font-face {
+    font-family: 'SFMono';
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+    font-named-instance: 'Bold';
+    src: url('/fonts/SFMono/SFMonoBold.otf') format("woff2");
+}
+
+@font-face {
+    font-family: 'SFMono';
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+    font-named-instance: 'Medium';
+    src: url('/fonts/SFMono/SFMonoMedium.otf') format("woff2");
+}
+
+@font-face {
+    font-family: 'SFMono';
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+    font-named-instance: 'Semibold';
+    src: url('/fonts/SFMono/SFMonoSemibold.otf') format("woff2");
+}
+
+@font-face {
+    font-family: 'SFMono';
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+    font-named-instance: 'Regular';
+    src: url('/fonts/SFMono/SFMonoRegular.otf') format("woff2");
+}

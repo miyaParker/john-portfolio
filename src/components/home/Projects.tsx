@@ -1,138 +1,151 @@
-import React, {useEffect, useState} from 'react';
-import {StaticImage} from 'gatsby-plugin-image';
+import React from 'react';
+import Arrow from '../../images/arrow.svg';
+import Rosita from '../../images/rosita.svg';
+import Checkbox from '../../images/checkbox.svg';
+import Finder from '../../images/finder.svg';
+import Lifeblood from '../../images/lifeblood.svg';
+import Success from '../../images/success.svg';
 
-const Testimonials = () => {
-  const [index, setIndex] = useState(0);
-  const testimonials = [
-    {
-      name: 'Anayo Obiajulu',
-      role: 'Senior Product Designer',
-      company: 'NERDBUG LIMITED',
-      image: '',
-      quote:
-        ' John is a prolific product designer . He is very thorough in\n' +
-        '            documenting product requirements and design considerations as well\n' +
-        '            as user interface and user experience design. I’ve worked with him\n' +
-        '            on a number of projects and I can say that he’ll be an asset to any\n' +
-        '            team anywhere in the world',
-    },
-    {
-      name: 'Michael Emmanuel',
-      role: 'Senior Product Designer',
-      company: 'NOMBA',
-      image: '',
-      quote:
-        'John is a highly skilled designer. He is \n' +
-        'not only friendly and helpful but also \n' +
-        'goes above and beyond to maintain \n' +
-        'the team spirit. Moreover, I have seen \n' +
-        'him working his way through challenges \n' +
-        'and crises. He uses innovative \n' +
-        'approaches to tackling and solving \n' +
-        'problems. He is such an inspiration \n' +
-        'to me',
-    },
-    {
-      name: 'Fiwa Okunade',
-      role: 'CEO, Senior Product Designer & Mentor',
-      company: 'Perxels',
-      image: '',
-      quote:
-        'John Olarinde is a smart designer. His \n' +
-        'designs are top-notch because \n' +
-        'he pays attention to details \n' +
-        'and product requirements.',
-    },
-    {
-      name: 'Bridget Iyere',
-      role: 'Product Manager',
-      company: 'e-LIMU WORLD',
-      image: '',
-      quote:
-        'I had the privilege of working with John at eLimu World and can confidently say that' +
-        'he is a creative designer. Not only does he ' +
-        'possess a good level of creativity and ' +
-        'design skills, but he also can align his ' +
-        'designs with the business goals and user ' +
-        'needs. He is well-skilled in user-centered ' +
-        'designs and consistently thrives to deliver' +
-        'designs that look not only great but also ' +
-        'drive measurable results.',
-    },
-  ];
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      const newIndex = index <= 2 ? index + 1 : 0;
-      setIndex(newIndex);
-    }, 5000);
-    return () => {
-      clearInterval(intervalId);
-    };
-  }, [index]);
+const Projects = () => {
   return (
-    <div>
-      <h2 className='max-w-[688px] mx-auto mt-[140px] lg:text-[70px] leading-[84px] font-bold text-white text-center'>
-      What People Are Saying About Me
-  </h2>
-  <div className='flex justify-center mt-[50px]'>
-  <div className='bg-blue-200 w-[400px] relative h-[707px] pl-[70px] rounded-l-[10px] overflow-'>
-  <p className='max-w-[250px] mt-[97px] uppercase text-[28px] tracking-[0.04em] font-normal text-white'>
-    What people are saying
-  </p>
-  <div className='absolute top-[486px]'>
-  <p className='text-[64px] font-bold z-20 w-max leading-[77px] text-white'>
-    {testimonials[index].name}
-    </p>
-    <p className='font-normal'>
-    {testimonials[index].role},
-    <span className='font-bold uppercase'>
-      {' '}
-  {testimonials[index].company}
-  </span>
-  </p>
-  </div>
-  </div>
-  <div className='bg-blue-50 h-[707px] w-[400px]'>
-    {/*<StaticImage*/}
-  {/*  src={'../../images/anayo.svg'}*/}
-  {/*  alt={'anayo'}*/}
-  {/*  width={400}*/}
-  {/*  height={707}*/}
-  {/*  className='h-[707px] w-[400px]'*/}
-  {/*/>*/}
-  </div>
-  <div className='relative px-[56px] h-[707px] w-[460px] bg-white rounded-r-[10px]'>
-  <StaticImage
-    src={'../../images/quotes.svg'}
-  alt={'quote one'}
-  width={158}
-  height={140}
-  className='z-10 absolute top-[97px] right-[103px] opacity-[0.1]'
-  />
-  <p className='mt-[198px] text-[25px] tracking-[-0.02em] text-blue-100 relative z-20'>
-    {testimonials[index].quote}
-    </p>
+    <div className='px-[20px] md:px-[40px] lg:px-[80px] xl:px-[120px] 2xl:px-[204px]'>
+      <p className=' mt-[140px] text-center uppercase font-mono lg:text-[18px] text-lemon uppercase mb-[20px] font-mono leading-[28px]'>
+        MY PROJECTS
+      </p>
+      <h2 className='font-calibre max-w-[688px] mx-auto text-[42px] leading-[52px] md:text-[50px] lg:text-[60px] xl:text-[70px] md:leading-[60px] lg:leading-[72px] xl:leading-[84px] font-bold text-white text-center'>
+        Preview Some Of My Personal Projects
+      </h2>
+      <div className='w-full flex justify-center items-center flex-col lg:flex-row mt-[97px] justify-center gap-x-[30px]'>
+        <div className='w-full lg:w-[50%]'>
+          <div className='w-full rounded-[10px] bg-center bg-no-repeat bg-cover h-[430px] bg-[url("../images/rosita.svg")]'></div>
+          <p className='font-calibre mt-[55px] font-bold text-[20px] xl:text-[32px] 2xl:text-[35px] xl:leading-[42px]'>
+            UrbanGrowth - Redefining Urban Farming
+          </p>
+          <p className='font-calibre mt-[8px] text-gray max-w-[732px] text-[16px] xl:text-[22px] 2xl:text-[24px]'>
+            UrbanGrowth, a mobile application designed to empower urban dwellers
+            to grow their produce within the confines of their homes.
+          </p>
+          <div className='flex mt-[17px] items-center'>
+            <p className='font-mono font-medium text-[16px] xl:text-[20px] leading-[45px] text-lemon mr-2'>
+              View Case Study
+            </p>
+            <div className='w-[16px] h-[16px] overflow-clip'>
+              <img
+                src={Arrow}
+                alt='view more about Rosita African Cuisine case study'
+                width={16}
+                height={16}
+                className='w-full h-full object-cover'
+              />
+            </div>
+          </div>
+        </div>
+        <div className='w-full lg:w-[50%]'>
+          <div className='w-full rounded-[10px] bg-center bg-no-repeat bg-cover h-[430px] bg-[url("../images/rosita.svg")]'></div>
+          <p className='font-calibre mt-[55px] font-bold text-[20px] xl:text-[32px] 2xl:text-[35px] xl:leading-[42px]'>
+            Rosita African Cuisine
+          </p>
+          <p className='font-calibre mt-[8px] text-gray max-w-[732px] text-[16px] xl:text-[22px] 2xl:text-[24px]'>
+            Rosita African Cuisine is a chain of restaurants with the vision of
+            delivering the best African dishes to everyone across Africa.
+          </p>
+          <div className='flex mt-[17px] items-center'>
+            <p className='font-mono font-medium text-[18px] 2xl:text-[20px] leading-[45px] text-lemon mr-2'>
+              View Case Study
+            </p>
+            <div className='w-[16px] h-[16px] overflow-clip'>
+              <img
+                src={Arrow}
+                alt='view more about Rosita African Cuisine case study'
+                width={16}
+                height={16}
+                className='rounded-[10px] object-cover w-[100%] h-auto'
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className='mt-[186px] w-full h-[613px] '>
+        <img
+          src={Checkbox}
+          alt={'checkbox image'}
+          width={645}
+          height={430}
+          className='block w-full h-full object-cover rounded-[10px]'
+        />
+      </div>
+      <p className='font-calibre mt-[55px] font-bold text-[20px] xl:text-[32px] 2xl:text-[35px] xl:leading-[42px]'>
+        CheckBox Human Resource Management Software
+      </p>
+      <p className='font-calibre mt-[8px] text-gray max-w-[759px] text-[16px] xl:text-[22px] 2xl:text-[24px]'>
+        CheckBox is a web application that helps place all the human resources
+        management goals in one software.
+      </p>
+      <div className='flex mt-[17px] items-center'>
+        <p className='font-mono font-medium text-[18px] 2xl:text-[20px] leading-[45px] text-lemon mr-2'>
+          View Case Study
+        </p>
+        <div className='w-[16px] h-[16px] overflow-clip'>
+          <img
+            src={Arrow}
+            alt='view more about Rosita African Cuisine case study'
+            width={16}
+            height={16}
+            className='w-full h-full object-cover'
+          />
+        </div>
+      </div>
+      <div className='w-full flex justify-center items-center flex-col lg:flex-row mt-[97px] justify-center gap-x-[30px]'>
+        <div className='w-full lg:w-[50%]'>
+          <div className='w-full rounded-[10px] bg-center bg-no-repeat h-[430px] bg-[url("../images/rosita.svg")] bg-cover'></div>
+          <p className='font-calibre mt-[55px] font-bold text-[20px] xl:text-[32px] 2xl:text-[35px] xl:leading-[42px]'>
+            UrbanGrowth - Redefining Urban Farming
+          </p>
+          <p className='font-calibre mt-[8px] text-gray max-w-[732px] text-[16px] xl:text-[22px] 2xl:text-[24px]'>
+            UrbanGrowth, a mobile application designed to empower urban dwellers
+            to grow their produce within the confines of their homes.
+          </p>
+          <div className='flex mt-[17px] items-center'>
+            <p className='font-mono font-medium text-[16px] xl:text-[20px] leading-[45px] text-lemon mr-2'>
+              View Case Study
+            </p>
+            <div className='w-[16px] h-[16px] overflow-clip'>
+              <img
+                src={Arrow}
+                alt='view more about Rosita African Cuisine case study'
+                width={16}
+                height={16}
+                className='w-full h-full object-cover'
+              />
+            </div>
+          </div>
+        </div>
+        <div className='w-full lg:w-[50%]'>
+          <div className='w-full rounded-[10px] bg-center bg-no-repeat  h-[430px] bg-[url("../images/rosita.svg")] bg-cover'></div>
+          <p className='font-calibre mt-[55px] font-bold text-[20px] xl:text-[32px] 2xl:text-[35px] xl:leading-[42px]'>
+            Rosita African Cuisine
+          </p>
+          <p className='font-calibre mt-[8px] text-gray max-w-[732px] text-[16px] xl:text-[22px] 2xl:text-[24px]'>
+            Rosita African Cuisine is a chain of restaurants with the vision of
+            delivering the best African dishes to everyone across Africa.
+          </p>
+          <div className='flex mt-[17px] items-center'>
+            <p className='font-mono font-medium text-[18px] 2xl:text-[20px] leading-[45px] text-lemon mr-2'>
+              View Case Study
+            </p>
+            <div className='w-[16px] h-[16px] overflow-clip'>
+              <img
+                src={Arrow}
+                alt='view more about Rosita African Cuisine case study'
+                width={16}
+                height={16}
+                className='rounded-[10px] object-cover w-[100%] h-auto'
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
-    <div className='flex justify-center items-center mt-[28px] gap-x-[19px]'>
-  <div
-    onClick={() => setIndex(0)}
-  className='cursor-pointer w-[5px] h-[5px] rounded-full bg-white'
-    ></div>
-    <div
-  onClick={() => setIndex(1)}
-  className='cursor-pointer w-[5px] h-[5px] rounded-full bg-white'
-    ></div>
-    <div
-  onClick={() => setIndex(2)}
-  className='cursor-pointer w-[5px] h-[5px] rounded-full bg-white'
-    ></div>
-    <div
-  onClick={() => setIndex(3)}
-  className='cursor-pointer w-[5px] h-[5px] rounded-full bg-white'
-    ></div>
-    </div>
-    </div>
-);
+  );
 };
-export default Testimonials;
+export default Projects;
