@@ -6,10 +6,28 @@ import Testimonials from '../components/home/Testimonials';
 import Projects from '../components/home/Projects';
 import Blog from '../components/home/Blog';
 import Contact from '../components/Contact';
+import Instagram from '../images/instagram.svg';
+import LinkedIn from '../images/linkedin.svg';
+import Twitter from '../images/twitter.svg';
+import Dribbble from '../images/dribbble.svg';
+import Mail from '../images/mail.svg';
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <Layout>
+      <div className='hidden lg:block 2xl:hidden'>
+        <div className='flex flex-col gap-[30px] fixed left-[20px] xl:left-[40px] 2xl:left-[70px] bottom-[40px] items-center'>
+          <img src={Instagram} width={24} height={24} />
+          <img src={LinkedIn} width={24} height={24} />
+          <img src={Twitter} width={24} height={24} />
+          <img src={Dribbble} width={24} height={24} />
+          <div className='h-[204px] w-[2px] bg-white'></div>
+        </div>
+        <div className='flex flex-col gap-[30px] fixed right-[20px] xl:right-[40px] 2xl:right-[70px]  bottom-[40px] items-center'>
+          <img src={Mail} width={240} height={24} className='w-auto' />
+          <div className='h-[204px] w-[2px] bg-white'></div>
+        </div>
+      </div>
       <Hero />
       <Testimonials />
       <Projects />

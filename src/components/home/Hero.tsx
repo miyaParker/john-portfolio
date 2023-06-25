@@ -3,7 +3,7 @@ import Arrow from '../../images/arrow-right.svg';
 
 const Hero = () => {
   return (
-    <main className='px-[20px] md:px-[40px] lg:px-[80px] xl:px-[120px] 2xl:px-[204px] mt-[123px]'>
+    <main className='px-[20px] md:px-[40px] lg:px-[80px] xl:px-[120px] 2xl:px-[204px] pt-[200px]'>
       <p className='font-mono font-semibold lg:text-[18px] text-lemon uppercase mb-[20px] leading-[28px]'>
         hi, my name is
       </p>
