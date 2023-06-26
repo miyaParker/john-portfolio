@@ -2,12 +2,13 @@ import Arrow from '../../images/arrow.svg';
 import Checkbox from '../../images/checkbox.svg';
 import React from 'react';
 import Layout from '../../components/Layout';
+import {Link} from 'gatsby';
 
 const Projects = () => {
   return (
     <Layout>
       <div className='px-[20px] md:px-[40px] lg:px-[80px] xl:px-[160px] 2xl:px-[204px]'>
-        <p className=' mt-[140px] text-center uppercase font-mono lg:text-[18px] text-lemon uppercase mb-[20px] font-mono leading-[28px]'>
+        <p className=' pt-[200px] text-center uppercase font-mono lg:text-[18px] text-lemon uppercase mb-[20px] font-mono leading-[28px]'>
           MY PROJECTS
         </p>
         <h2 className='font-calibre max-w-[688px] mx-auto text-[42px] leading-[52px] md:text-[50px] lg:text-[60px] xl:text-[70px] md:leading-[60px] lg:leading-[72px] xl:leading-[84px] font-bold text-white text-center'>
@@ -47,7 +48,8 @@ const Projects = () => {
               Rosita African Cuisine is a chain of restaurants with the vision
               of delivering the best African dishes to everyone across Africa.
             </p>
-            <div className='flex mt-[17px] items-center'>
+
+            <div className='flex mt-[17px] items-center cursor-pointer'>
               <p className='font-mono font-medium text-[18px] 2xl:text-[20px] leading-[45px] text-lemon mr-2'>
                 View Case Study
               </p>

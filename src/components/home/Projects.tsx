@@ -5,6 +5,7 @@ import Checkbox from '../../images/checkbox.svg';
 import Finder from '../../images/finder.svg';
 import Lifeblood from '../../images/lifeblood.svg';
 import Success from '../../images/success.svg';
+import {Link} from 'gatsby';
 
 const Projects = () => {
   return (
@@ -49,20 +50,23 @@ const Projects = () => {
             Rosita African Cuisine is a chain of restaurants with the vision of
             delivering the best African dishes to everyone across Africa.
           </p>
-          <div className='flex mt-[17px] items-center'>
-            <p className='font-mono font-medium text-[18px] 2xl:text-[20px] leading-[45px] text-lemon mr-2'>
-              View Case Study
-            </p>
-            <div className='w-[16px] h-[16px] overflow-clip'>
-              <img
-                src={Arrow}
-                alt='view more about Rosita African Cuisine case study'
-                width={16}
-                height={16}
-                className='rounded-[10px] object-cover w-[100%] h-auto'
-              />
+          <Link to='/projects/rosita-case-study'>
+            <div className='flex mt-[17px] items-center'>
+              <p className='font-mono font-medium text-[18px] 2xl:text-[20px] leading-[45px] text-lemon mr-2'>
+                View Case Study
+              </p>
+
+              <div className='cursor-pointer w-[16px] h-[16px] overflow-clip'>
+                <img
+                  src={Arrow}
+                  alt='view more about Rosita African Cuisine case study'
+                  width={16}
+                  height={16}
+                  className='rounded-[10px] object-cover w-[100%] h-auto'
+                />
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
       <div className='mt-[186px] w-full h-[613px] '>

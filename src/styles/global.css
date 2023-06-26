@@ -63,3 +63,6 @@
     font-named-instance: 'Regular';
     src: url('/fonts/SFMono/SFMonoRegular.otf') format("woff2");
 }
+.prob{
+    box-shadow: 0px 8px 50px 0px rgba(0, 0, 0, 0.25);
+}

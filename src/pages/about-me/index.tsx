@@ -34,7 +34,7 @@ import Music5 from '../../images/music5.svg';
 const Projects = () => {
   return (
     <Layout>
-      <div className='mt-[123px] px-[20px] md:px-[40px] lg:px-[80px] xl:px-[120px] 2xl:px-[204px]'>
+      <div className='pt-[200px] px-[20px] md:px-[40px] lg:px-[80px] xl:px-[120px] 2xl:px-[204px]'>
         <div className='w-full flex flex-col lg:flex-row gap-x-[28px] lg:gap-x-[48px] xl:gap-x-[58px] 2xl:gap-x-[88px]'>
           <div className='w-full lg:w-[45%] h-[526px] md:h-[626px] lg:h-[826px] xl:h-[1176px] rounded-[10px] bg-center sm:bg-[center_top_-3rem] md:bg-[center_top_-5rem] lg:bg-center  bg-cover h-[430px] bg-[url("../images/john.svg")]'></div>
           <div className='w-full lg:w-[55%]'>
@@ -106,7 +106,7 @@ const Projects = () => {
               </p>
               <div>
                 <p className='font-calibre mt-[60px] text-gray max-w-[846px] text-[26px] xl:text-[28px] 2xl:text-[30px]'>
-                  Here are three if my recent favorite dishes:
+                  Here are three of my recent favorite dishes:
                 </p>
                 <div className='flex items-center'>
                   <div className='w-2 h-2 rounded-full bg-gray mr-2'></div>
