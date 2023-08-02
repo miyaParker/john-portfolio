@@ -9,7 +9,14 @@
     font-named-instance: 'Bold';
     src: url('/fonts/Calibre/Calibre-Bold.woff2') format("woff2");
 }
-
+@font-face {
+    font-family: 'Calibre';
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+    font-named-instance: 'Semibold';
+    src: url('/fonts/Calibre/CalibreSemibold.otf') format("woff2");
+}
 @font-face {
     font-family: 'Calibre';
     font-weight: 500;
@@ -26,6 +33,14 @@
     font-style: normal;
     font-named-instance: 'Regular';
     src: url('/fonts/Calibre/Calibre-Regular.woff2') format("woff2");
+}
+@font-face {
+    font-family: 'Calibre';
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+    font-named-instance: 'Thin';
+    src: url('/fonts/Calibre/CalibreThin.otf') format("woff2");
 }
 
 @font-face {

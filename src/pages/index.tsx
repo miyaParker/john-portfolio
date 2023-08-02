@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, {useEffect} from 'react';
 import type {HeadFC, PageProps} from 'gatsby';
 import Layout from '../components/Layout';
 import Hero from '../components/home/Hero';
@@ -14,8 +14,8 @@ import Mail from '../images/mail.svg';
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <Layout>
-      <div className='hidden lg:block 2xl:hidden'>
+    <Layout pathName='/'>
+      <div className='hidden lg:block max-w-[2560px]:hidden'>
         <div className='flex flex-col gap-[30px] fixed left-[20px] xl:left-[40px] 2xl:left-[70px] bottom-[40px] items-center'>
           <img src={Instagram} width={24} height={24} />
           <img src={LinkedIn} width={24} height={24} />

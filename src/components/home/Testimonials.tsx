@@ -76,7 +76,10 @@ const Testimonials = () => {
   }, [index]);
   return (
     <div className='w-full px-[20px] md:px-[40px] lg:px-[140px] xl:px-[120px] 2xl:px-[204px]'>
-      <h2 className='font-calibre max-w-[688px] mx-auto mt-[157px] text-[42px] leading-[52px] md:text-[50px] lg:text-[60px] xl:text-[70px] md:leading-[60px] lg:leading-[72px] xl:leading-[84px] font-bold text-white text-center'>
+      <p className='mt-[157px] text-center uppercase font-mono lg:text-[18px] text-lemon uppercase mb-[20px] font-mono leading-[28px]'>
+        MY PROJECTS
+      </p>
+      <h2 className='font-calibre max-w-[541px] mx-auto  text-[35px] leading-[45px] md:leading-[55px] md:text-[45px] lg:text-[55px] md:leading-[60px] lg:leading-[66px] font-bold text-white text-center'>
         What People Are Saying About Me
       </h2>
       <div className='flex justify-center mt-[50px] w-full'>
@@ -114,7 +117,7 @@ const Testimonials = () => {
             height={140}
             className='z-10 absolute top-[87px] xl:top-[97px] right-[103px] opacity-[0.1]'
           />
-          <p className='mt-[178px] xl:mt-[198px] text-[16px] lg:text-[18px] xl:text-[20px] xl:text-[25px] tracking-[-0.02em] leading-[35.5px] text-blue-100 relative z-20'>
+          <p className='font-calibre font-thin mt-[178px] lg:mt-[198px] text-[20px] md:text-[22px] lg:text-[25px] tracking-[-2%] leading-[44px] text-blue-100 relative z-20'>
             {testimonials[index].quote}
           </p>
         </div>

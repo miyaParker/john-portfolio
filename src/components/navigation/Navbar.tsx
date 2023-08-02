@@ -1,10 +1,14 @@
 import React, {useEffect, useState} from 'react';
 import {Link} from 'gatsby';
 
-const Navbar = () => {
+const Navbar = ({pathName}: {pathName: string | undefined}) => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
   const navLinks = [
+    {
+      name: 'Home',
+      link: '/',
+    },
     {
       name: 'About Me',
       link: '/about-me',
@@ -41,31 +45,27 @@ const Navbar = () => {
     <nav
       className={`${
         visible ? 'top-0 ' : 'top-[-60px]'
-      } fixed w-full bg-blue-100 text-[18px] z-50 flex justify-between h-[77px] items-center font-mono px-[20px] lg:px-[120px] xl:px-[120px] 2xl:px-[204px]`}
+      }  fixed w-full  text-[18px] z-50 hidden lg:flex justify-center h-[77px] gap-x-[67px] items-center font-mono px-[20px] lg:px-[120px] ${
+        pathName === undefined ? 'bg-none' : 'bg-blue-100'
+      }`}
     >
-      <Link
-        to='/'
-        className='font-mono text-blue-50 text-[18px] font-semibold leading-[28px]'
-      >
-        Home
-      </Link>
-      <div className='lg:flex gap-x-[67px] hidden '>
-        {navLinks.map((navLink, index) => (
-          <Link
-            key={index}
-            className='font-mono text-blue-50 text-[18px] font-semibold leading-[28px]'
-            to={navLink.link}
-          >
-            {navLink.name}
-          </Link>
-        ))}
-        <a
-          className='font-mono text-blue-50 text-[18px] font-semibold leading-[28px]'
-          href='mailto:joolarinde@gmail.com'
+      {navLinks.map((navLink, index) => (
+        <Link
+          key={index}
+          className={`${
+            pathName === navLink.link ? 'border-b border-b-2 border-lemon' : ''
+          } font-mono text-white text-[18px] font-semibold leading-[28px]`}
+          to={navLink.link}
         >
-          joolarinde@gmail.com
-        </a>
-      </div>
+          {navLink.name}
+        </Link>
+      ))}
+      <a
+        className='font-mono text-white text-[18px] font-semibold leading-[28px]'
+        href='mailto:joolarinde@gmail.com'
+      >
+        joolarinde@gmail.com
+      </a>
       <button className='block lg:hidden'>Mobile Menu</button>
     </nav>
   );

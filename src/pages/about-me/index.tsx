@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from '../../components/Layout';
-import Arrow from '../../images/arrow.svg';
 import Contact from '../../components/Contact';
 import Chef from '../../images/chef.svg';
 import Travel from '../../images/travel.svg';
@@ -31,12 +30,12 @@ import Music3 from '../../images/music3.svg';
 import Music4 from '../../images/music4.svg';
 import Music5 from '../../images/music5.svg';
 
-const Projects = () => {
+const About = () => {
   return (
-    <Layout>
-      <div className='pt-[200px] px-[20px] md:px-[40px] lg:px-[80px] xl:px-[120px] 2xl:px-[204px]'>
+    <Layout pathName='/about-me'>
+      <div className='pt-[200px] font-thin px-[20px] md:px-[40px] lg:px-[80px] xl:px-[120px] 2xl:px-[204px]'>
         <div className='w-full flex flex-col lg:flex-row gap-x-[28px] lg:gap-x-[48px] xl:gap-x-[58px] 2xl:gap-x-[88px]'>
-          <div className='w-full lg:w-[45%] h-[526px] md:h-[626px] lg:h-[826px] xl:h-[1176px] rounded-[10px] bg-center sm:bg-[center_top_-3rem] md:bg-[center_top_-5rem] lg:bg-center  bg-cover h-[430px] bg-[url("../images/john.svg")]'></div>
+          <div className='w-full lg:w-[38%] h-[400px] md:h-[520px] lg:h-[654px] rounded-[10px] bg-center sm:bg-[center_top_-3rem] md:bg-[center_top_-5rem] lg:bg-center bg-cover h-[430px] bg-[url("../images/john.jpg")]'></div>
           <div className='w-full lg:w-[55%]'>
             <p className='uppercase font-mono lg:text-[18px] text-lemon uppercase mb-[20px] font-mono leading-[28px]'>
               A LITTLE ABOUT ME
@@ -45,44 +44,23 @@ const Projects = () => {
               Hi, I’m John!
             </h2>
             <div className='border border-white border-1 w-[35px]'></div>
-            <p className='font-calibre mt-[58px] text-gray max-w-[846px] text-[26px] xl:text-[28px] 2xl:text-[30px]'>
-              I’m a product designer with many years of experience working cross
-              functionally with companies across Africa (Co-Creation Hub),
+            <p className='font-calibre mt-[58px] text-gray max-w-[846px] text-[24px] md:text-[26px] lg:text-[28px]'>
+              I am a product designer with many years of experience working
+              cross functionally with companies across Africa (Co-Creation Hub),
               Europe (Geonode), and Asia (Oneistox). I am passionate about
               helping early-stage, and Series A companies bring their ideas to
               life and succeed in the market.
             </p>
-            <p className='font-calibre mt-[50px] text-gray max-w-[846px] text-[26px] xl:text-[28px] 2xl:text-[30px]'>
+            <p className='font-calibre mt-[50px] text-gray max-w-[846px] text-[24px] md:text-[26px] lg:text-[28px]'>
               My deep understanding of different cultures and ability to adapt
               quickly to new environments set me apart. Having worked in Africa,
               Europe, and Asia, I have developed a unique perspective that
               allows them to create products that resonate with users from
               different backgrounds and with varying needs.
             </p>
-            <p className='font-calibre mt-[50px] text-gray max-w-[846px] text-[26px] xl:text-[28px] 2xl:text-[30px]'>
-              Throughout my career, I have demonstrated exceptional leadership
-              skills, collaborating with cross-functional teams and stakeholders
-              to deliver high quality products on time and within budget. My
-              ability to think strategically, communicate effectively, and
-              inspire others has earned my peers' respect and made me a go-to
-              resource for companies looking to build innovative products.
-            </p>
-            <a href='mailto:johnolarinde@gmail.com'>
-              <button className='block mt-[44px] flex items-center gap-[8px] border border-1 rounded-[5px] border-lemon px-[42px] py-[16px] md:px-[52px] md:py-[18px] lg:px-[62px] lg:py-[20px]'>
-                <span className='underline leading-[120%] font-mono uppercase text-lemon font-medium text-[12px] md:text-[14px] lg:text-[16px]'>
-                  LETS TALK
-                </span>
-                <img
-                  src={Arrow}
-                  alt='talk to John Ayorinde'
-                  width={16}
-                  height={12}
-                />
-              </button>
-            </a>
           </div>
         </div>
-        <div className='mt-[280px]'>
+        <div className='mt-[60px] md:[120px] lg:mt-[187px]'>
           <div className='flex flex-col lg:flex-row lg:gap-x-[40px] xl:gap-x-[90px] justify-between items-center'>
             <div className='w-full lg:w-[45%]'>
               <div className='flex items-start'>
@@ -97,48 +75,13 @@ const Projects = () => {
                   An Amateur Cook
                 </h2>
               </div>
-              <p className='font-calibre mt-[50px] text-gray max-w-[846px] text-[26px] xl:text-[28px] 2xl:text-[30px]'>
+              <p className='font-calibre mt-[50px] text-gray max-w-[846px]  text-[24px] md:text-[26px] lg:text-[28px]'>
                 The pandemic turned me into an avid cooking enthusiast. As
                 someone whose meals revolved around local dishes before
-                COVID-19, I’d like to think I’ve come a long way by exploring
+                COVID-19, I’d like tothink I’ve come a long way by exploring
                 various cuisines and dishes. My favourite and most frequented
                 are Indian, Italian and Chinese.
               </p>
-              <div>
-                <p className='font-calibre mt-[60px] text-gray max-w-[846px] text-[26px] xl:text-[28px] 2xl:text-[30px]'>
-                  Here are three of my recent favorite dishes:
-                </p>
-                <div className='flex items-center'>
-                  <div className='w-2 h-2 rounded-full bg-gray mr-2'></div>
-                  <p className='mt-2 font-calibre text-gray max-w-[846px] text-[26px] xl:text-[28px] 2xl:text-[30px]'>
-                    Kung Pao Chicken - a famous Sichuan-style specialty
-                  </p>
-                </div>
-                <div className='flex items-center'>
-                  <div className='w-2 h-2 rounded-full bg-gray mr-2'></div>
-                  <p className='font-calibre text-gray max-w-[846px] text-[26px] xl:text-[28px] 2xl:text-[30px]'>
-                    Dumplings - A traditional food type popular in North China
-                  </p>
-                </div>
-                <div className='flex items-center'>
-                  <div className='w-2 h-2 rounded-full bg-gray mr-2'></div>
-                  <p className='font-calibre text-gray max-w-[846px] text-[26px] xl:text-[28px] 2xl:text-[30px]'>
-                    Margherita Pizza
-                  </p>
-                </div>
-                <div className='flex items-center'>
-                  <div className='w-2 h-2 rounded-full bg-gray mr-2'></div>
-                  <p className='font-calibre text-gray max-w-[846px] text-[26px] xl:text-[28px] 2xl:text-[30px]'>
-                    Lasagna
-                  </p>
-                </div>
-                <div className='flex items-center'>
-                  <div className='w-2 h-2 rounded-full bg-gray mr-2'></div>
-                  <p className='font-calibre text-gray max-w-[846px] text-[26px] xl:text-[28px] 2xl:text-[30px]'>
-                    Tandoori Chicken
-                  </p>
-                </div>
-              </div>
             </div>
             <div className='grid grid-cols-2 w-full md:w-[60%] mx-auto lg:mx-0  lg:w-[45%] mt-[128px] lg:mt-0 justify-items-center'>
               <img
@@ -146,28 +89,28 @@ const Projects = () => {
                 alt='lasagna'
                 width={445}
                 height={465}
-                className='relative top-[-32px]'
+                className='rounded-[10px] relative top-[-32px]'
               />
               <img
                 src={Food2}
                 alt='lasagna'
                 width={445}
                 height={465}
-                className='relative left-[8px] md:left-[16px] xl:left-[32px]'
+                className='relative rounded-[10px] left-[8px] md:left-[16px] xl:left-[32px]'
               />
               <img
                 src={Food3}
                 alt='lasagna'
                 width={445}
                 height={465}
-                className='relative top-[-16px]'
+                className='relative rounded-[10px] top-[-16px]'
               />
               <img
                 src={Food4}
                 alt='lasagna'
                 width={445}
                 height={465}
-                className='relative left-[8px] md:left-[16px] xl:left-[23px]'
+                className='relative rounded-[10px] left-[8px] md:left-[16px] xl:left-[23px]'
               />
             </div>
           </div>
@@ -185,14 +128,14 @@ const Projects = () => {
                   Travel Junkie
                 </h2>
               </div>
-              <p className='font-calibre mt-[50px] text-gray max-w-[846px] text-[26px] xl:text-[28px] 2xl:text-[30px]'>
+              <p className='font-calibre mt-[50px] text-gray max-w-[846px] text-[24px] md:text-[26px] lg:text-[28px]'>
                 I’ve lived in 6 cities across Africa and Europe. I like to think
                 this makes me quickly adapt to new environments and has taught
                 me to be curious. My travelling experiences have made me happier
                 as it allows me to disconnect & recharge and relieves me of
                 stress and anxiety.
               </p>
-              <p className='font-calibre mt-[50px] text-gray max-w-[846px] text-[26px] xl:text-[28px] 2xl:text-[30px]'>
+              <p className='font-calibre mt-[50px] text-gray max-w-[846px] text-[24px] md:text-[26px] lg:text-[28px]'>
                 Meeting new people and exploring new foods, cultures, languages,
                 and traditions has been a massive win for me travelling across
                 different continents
@@ -211,13 +154,13 @@ const Projects = () => {
                   Karaoke Lover
                 </h2>
               </div>
-              <p className='font-calibre mt-[50px] text-gray max-w-[846px] text-[26px] xl:text-[28px] 2xl:text-[30px]'>
+              <p className='font-calibre mt-[50px] text-gray max-w-[846px] text-[24px] md:text-[26px] lg:text-[28px]'>
                 As an avid lover of music of different genres, I have recently
                 found love with Karaoke. I join the Karaoke event every week in
                 a local lounge around my home, where I sing along to different
                 songs.
               </p>
-              <p className='font-calibre mt-[50px] text-gray max-w-[846px] text-[26px] xl:text-[28px] 2xl:text-[30px]'>
+              <p className='font-calibre mt-[50px] text-gray max-w-[846px] text-[24px] md:text-[26px] lg:text-[28px]'>
                 Karaoke allows me to connect directly to the emotions of
                 different themes and lets me lose the steam and stress in me as
                 endorphins are released, and they help reduce both anxiety and
@@ -290,7 +233,7 @@ const Projects = () => {
                 Podcasts I Listen To
               </h2>
             </div>
-            <p className='font-calibre mt-[30px] text-gray text-[26px] xl:text-[28px] 2xl:text-[30px]'>
+            <p className='font-calibre mt-[30px] text-gray text-[24px] md:text-[26px] lg:text-[28px]'>
               When I am travelling, or don’t have anything else to do, here are
               the podcast I listen to
             </p>
@@ -343,6 +286,10 @@ const Projects = () => {
                 My Music Playlist
               </h2>
             </div>
+            <p className='font-calibre mt-[30px] text-gray text-[24px] md:text-[26px] lg:text-[28px]'>
+              After a long day at work, I always resolve back to my Spotify
+              playlist to unwind and relax.
+            </p>
             <div className='mt-[50px] border border-white border-1 w-[35px]'></div>
           </div>
           <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-[32px] mt-[70px]'>
@@ -383,4 +330,4 @@ const Projects = () => {
     </Layout>
   );
 };
-export default Projects;
+export default About;

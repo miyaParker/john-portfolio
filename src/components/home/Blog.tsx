@@ -10,7 +10,7 @@ const Blog = () => {
       <p className='mt-[202px] text-center uppercase font-mono lg:text-[18px] text-lemon uppercase mb-[20px] font-mono leading-[28px]'>
         MY BLOG
       </p>
-      <h2 className='font-calibre max-w-[688px] mx-auto text-[42px] leading-[52px] md:text-[50px] lg:text-[60px] xl:text-[70px] md:leading-[60px] lg:leading-[72px] xl:leading-[84px] font-bold text-white text-center'>
+      <h2 className='font-calibre max-w-[688px] mx-auto text-[50px] md:text-[60px] lg:text-[70px] leading-[120%] font-bold text-white text-center'>
         How I Detail My Writings And Thoughts
       </h2>
       <div className='w-full md:max-w-max mt-[50px] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mx-auto gap-x-[11px] gap-y-[14px]'>
@@ -28,7 +28,7 @@ const Blog = () => {
             <p className='font-calibre w-full xl:max-w-[347px] font-calibre font-semibold text-[24px]'>
               The Risks of Seeking too much Feedback on your Design Projects!
             </p>
-            <p className='w-full xl:max-w-[334px] my-[19px] text-[16px] text-[#8892B0] font-calibre font-medium'>
+            <p className='w-full font-thin xl:max-w-[334px] my-[19px] text-[18px] text-[#8892B0] font-calibre font-medium'>
               Many of us (designers) have tried once or numerous times tried to
               reach out to senior colleagues to have a look or give feedback on
               our design process or the project itself.
@@ -63,7 +63,7 @@ const Blog = () => {
             <p className='font-calibre w-full xl:max-w-[347px] font-calibre font-semibold text-[24px]'>
               Psychology in Design & how it make interfaces that are effective
             </p>
-            <p className='w-full xl:max-w-[334px] my-[19px] text-[16px] text-[#8892B0] font-calibre font-medium'>
+            <p className='w-full font-thin xl:max-w-[334px] my-[19px] text-[18px] text-[#8892B0] font-calibre font-medium'>
               Many of us (designers) have tried once or numerous times tried to
               reach out to senior colleagues to have a look or give feedback on
               our design process or the project itself.
@@ -98,11 +98,11 @@ const Blog = () => {
             <p className='font-calibre w-full xl:max-w-[347px] font-calibre font-semibold text-[24px]'>
               How to measure success as a Designer
             </p>
-            <p className='w-full xl:max-w-[334px] my-[19px] text-[16px] text-[#8892B0] font-calibre font-medium'>
+            <p className='w-full font-thin xl:max-w-[334px] my-[19px] text-[18px] text-[#8892B0] font-calibre'>
               The proof of the pudding…’ as the famous maxim goes, ‘…is in the
               eating…’ and I beg to add ‘not in the cooking nor the dishing.’
               The same should go for the designs we create, but often, that is
-              not the case
+              ...
             </p>
             <div className='flex mb-[14px] items-center'>
               <p className='font-mono font-medium text-[14px] xl:text-[15px] leading-[28px] text-lemon mr-2'>
