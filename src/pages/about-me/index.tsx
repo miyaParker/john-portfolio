@@ -1,4 +1,5 @@
 import React from 'react';
+import {motion} from 'framer-motion';
 import Layout from '../../components/Layout';
 import Contact from '../../components/Contact';
 import Chef from '../../images/chef.svg';
@@ -16,7 +17,7 @@ import Book1 from '../../images/book1.svg';
 import Book2 from '../../images/book2.svg';
 import Book3 from '../../images/book3.svg';
 import Book4 from '../../images/book4.svg';
-import Book5 from '../../images/book5.svg';
+import Book5 from '../../images/book5.png';
 
 import Pod1 from '../../images/pod1.svg';
 import Pod2 from '../../images/pod2.svg';
@@ -34,8 +35,18 @@ const About = () => {
   return (
     <Layout pathName='/about-me'>
       <div className='pt-[200px] font-thin px-[20px] md:px-[40px] lg:px-[80px] xl:px-[120px] 2xl:px-[204px]'>
-        <div className='w-full flex flex-col lg:flex-row gap-x-[28px] lg:gap-x-[48px] xl:gap-x-[58px] 2xl:gap-x-[88px]'>
-          <div className='w-full lg:w-[38%] h-[400px] md:h-[520px] lg:h-[654px] rounded-[10px] bg-center sm:bg-[center_top_-3rem] md:bg-[center_top_-5rem] lg:bg-center bg-cover h-[430px] bg-[url("../images/john.jpg")]'></div>
+        <motion.div
+          initial={{opacity: 0, y: '10vh'}}
+          whileInView={{opacity: 1, y: 0}}
+          transition={{
+            type: 'tween',
+            delay: 0.2,
+            duration: 0.6,
+            ease: 'easeOut',
+          }}
+          className='w-full flex flex-col lg:flex-row gap-x-[28px] lg:gap-x-[48px] xl:gap-x-[58px] 2xl:gap-x-[88px]'
+        >
+          <div className='w-full lg:w-[38%] h-[400px] md:h-[520px] lg:h-[654px] rounded-[10px] bg-center sm:bg-[center_top_-3rem] md:bg-[center_top_-5rem] lg:bg-center bg-cover h-[430px] bg-[url("../images/john.png")]'></div>
           <div className='w-full lg:w-[55%]'>
             <p className='uppercase font-mono lg:text-[18px] text-lemon uppercase mb-[20px] font-mono leading-[28px]'>
               A LITTLE ABOUT ME
@@ -59,8 +70,8 @@ const About = () => {
               different backgrounds and with varying needs.
             </p>
           </div>
-        </div>
-        <div className='mt-[60px] md:[120px] lg:mt-[187px]'>
+        </motion.div>
+        <motion.div className='mt-[60px] md:[120px] lg:mt-[187px]'>
           <div className='flex flex-col lg:flex-row lg:gap-x-[40px] xl:gap-x-[90px] justify-between items-center'>
             <div className='w-full lg:w-[45%]'>
               <div className='flex items-start'>
@@ -84,28 +95,60 @@ const About = () => {
               </p>
             </div>
             <div className='grid grid-cols-2 w-full md:w-[60%] mx-auto lg:mx-0  lg:w-[45%] mt-[128px] lg:mt-0 justify-items-center'>
-              <img
+              <motion.img
+                initial={{scale: 0.8}}
+                whileInView={{scale: 1}}
+                transition={{
+                  type: 'spring',
+                  duration: 0.2,
+                  ease: 'easeOut',
+                  stiffness: 120,
+                }}
                 src={Food1}
                 alt='lasagna'
                 width={445}
                 height={465}
                 className='rounded-[10px] relative top-[-32px]'
               />
-              <img
+              <motion.img
+                initial={{scale: 0.8}}
+                whileInView={{scale: 1}}
+                transition={{
+                  type: 'spring',
+                  duration: 0.3,
+                  ease: 'easeOut',
+                  stiffness: 120,
+                }}
                 src={Food2}
                 alt='lasagna'
                 width={445}
                 height={465}
                 className='relative rounded-[10px] left-[8px] md:left-[16px] xl:left-[32px]'
               />
-              <img
+              <motion.img
+                initial={{scale: 0.8}}
+                whileInView={{scale: 1}}
+                transition={{
+                  type: 'spring',
+                  duration: 0.4,
+                  ease: 'easeOut',
+                  stiffness: 120,
+                }}
                 src={Food3}
                 alt='lasagna'
                 width={445}
                 height={465}
                 className='relative rounded-[10px] top-[-16px]'
               />
-              <img
+              <motion.img
+                initial={{scale: 0.8}}
+                whileInView={{scale: 1}}
+                transition={{
+                  type: 'spring',
+                  duration: 0.5,
+                  ease: 'easeOut',
+                  stiffness: 120,
+                }}
                 src={Food4}
                 alt='lasagna'
                 width={445}
@@ -114,7 +157,17 @@ const About = () => {
               />
             </div>
           </div>
-          <div className='flex mt-[216px] flex-col lg:flex-row lg:gap-x-[40px] xl:gap-x-[90px] justify-between items-center'>
+          <motion.div
+            initial={{opacity: 0, y: '10vh'}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='flex mt-[216px] flex-col lg:flex-row lg:gap-x-[40px] xl:gap-x-[90px] justify-between items-center'
+          >
             <div className='w-full'>
               <div className='flex items-start'>
                 <img
@@ -168,9 +221,18 @@ const About = () => {
                 improves my retentive memory and builds my confidence.
               </p>
             </div>
-          </div>
-        </div>
-        <div>
+          </motion.div>
+        </motion.div>
+        <motion.div
+          initial={{opacity: 0, y: '10vh'}}
+          whileInView={{opacity: 1, y: 0}}
+          transition={{
+            type: 'tween',
+            delay: 0.2,
+            duration: 0.6,
+            ease: 'easeOut',
+          }}
+        >
           <div className='mt-[182px]'>
             <div className='flex items-start'>
               <img
@@ -218,8 +280,17 @@ const About = () => {
               />
             </div>
           </div>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          initial={{opacity: 0, y: '10vh'}}
+          whileInView={{opacity: 1, y: 0}}
+          transition={{
+            type: 'tween',
+            delay: 0.2,
+            duration: 0.6,
+            ease: 'easeOut',
+          }}
+        >
           <div className='mt-[182px]'>
             <div className='flex items-start'>
               <img
@@ -271,8 +342,17 @@ const About = () => {
               />
             </div>
           </div>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          initial={{opacity: 0, y: '10vh'}}
+          whileInView={{opacity: 1, y: 0}}
+          transition={{
+            type: 'tween',
+            delay: 0.2,
+            duration: 0.6,
+            ease: 'easeOut',
+          }}
+        >
           <div className='mt-[182px]'>
             <div className='flex items-start'>
               <img
@@ -324,7 +404,7 @@ const About = () => {
               />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
       <Contact />
     </Layout>

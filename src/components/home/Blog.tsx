@@ -3,10 +3,16 @@ import Feedback from '../../images/feedback.svg';
 import Arrow from '../../images/arrow.svg';
 import Brain from '../../images/brain.svg';
 import Success from '../../images/success.svg';
+import {motion} from 'framer-motion';
 
 const Blog = () => {
   return (
-    <div className='px-[20px] md:px-[40px] lg:px-[80px] xl:px-[120px] 2xl:px-[204px]'>
+    <motion.div
+      initial={{opacity: 0, y: '10vh'}}
+      whileInView={{opacity: 1, y: 0}}
+      transition={{type: 'tween', delay: 0.2, duration: 0.4, ease: 'easeOut'}}
+      className='px-[20px] md:px-[40px] lg:px-[80px] xl:px-[120px] 2xl:px-[204px]'
+    >
       <p className='mt-[202px] text-center uppercase font-mono lg:text-[18px] text-lemon uppercase mb-[20px] font-mono leading-[28px]'>
         MY BLOG
       </p>
@@ -127,7 +133,7 @@ const Blog = () => {
         </span>
         <img src={Arrow} alt='talk to John Ayorinde' width={16} height={12} />
       </button>
-    </div>
+    </motion.div>
   );
 };
 export default Blog;

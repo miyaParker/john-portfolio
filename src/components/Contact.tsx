@@ -1,9 +1,15 @@
 import React from 'react';
 import Arrow from '../images/arrow.svg';
+import {motion} from 'framer-motion';
 
 const Contact = () => {
   return (
-    <div className='px-[20px] md:px-[40px] lg:px-[80px] xl:px-[200px] '>
+    <motion.div
+      initial={{opacity: 0, y: 50}}
+      whileInView={{opacity: 1, y: 0}}
+      transition={{type: 'tween', delay: 0.2, duration: 0.3, ease: 'easeOut'}}
+      className='px-[20px] md:px-[40px] lg:px-[80px] xl:px-[200px] '
+    >
       <h2 className='mt-[150px] font-calibre max-w-[687px] mx-auto text-[42px] leading-[52px] md:text-[50px] lg:text-[60px] xl:text-[70px] md:leading-[60px] lg:leading-[72px] xl:leading-[84px] font-bold text-white text-center'>
         Get In Touch
       </h2>
@@ -19,7 +25,7 @@ const Contact = () => {
           <img src={Arrow} alt='talk to John Ayorinde' width={16} height={12} />
         </button>
       </a>
-    </div>
+    </motion.div>
   );
 };
 export default Contact;

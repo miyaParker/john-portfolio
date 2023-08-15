@@ -1,11 +1,12 @@
 import React from 'react';
+import {motion} from 'framer-motion';
 import Layout from '../../../components/Layout';
 import Outcome from '../../../images/outcome.png';
 import Research from '../../../images/desk-research.png';
 import Research2 from '../../../images/desk-research-2b.png';
 import Interview from '../../../images/user-interview.png';
-import Map1 from '../../../images/map1.png';
-import Map2 from '../../../images/map2.png';
+import Map1 from '../../../images/map1.jpg';
+import Map2 from '../../../images/map2.jpg';
 import Feature from '../../../images/feature2.png';
 import Constraints from '../../../images/constraints2.png';
 import Screen1 from '../../../images/commute-screen-1.png';
@@ -31,7 +32,7 @@ const Rosita = () => {
   return (
     <Layout>
       <div className=''>
-        <div className='relative w-full h-[640px] overflow-hidden relative top-[-120px] bg-fixed bg-[url("../images/commute-hero.png")]'>
+        <div className='relative w-full h-[640px] overflow-hidden relative top-[-120px] bg-fixed bg-[url("../images/commute-hero.jpg")]'>
           <div className='w-full h-full absolute z-10 bg-black opacity-80 top-0 bottom-0 left-0 right-0'></div>
         </div>
         <div className='absolute top-[180px] lg:top-[245px] z-20 w-full  px-[20px] md:px-[40px] lg:px-[80px]'>
@@ -85,7 +86,18 @@ const Rosita = () => {
               for users to see and track their journeys and train times.
             </p>
           </div>
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Introducing Easy Commute
             </h2>
@@ -156,8 +168,18 @@ const Rosita = () => {
                 </p>
               </div>
             </div>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+          >
             <h2 className='mt-[128px] font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[138%] text-white'>
               Defining the problem
             </h2>
@@ -169,9 +191,19 @@ const Rosita = () => {
               between the ages of 16 - 64, as this age range has the highest
               internet adoption rate (source).
             </p>
-          </div>
+          </motion.div>
 
-          <div>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+          >
             <h2 className='font-calibre mt-[128px] font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[138%] text-white'>
               Problem Statement
             </h2>
@@ -188,9 +220,20 @@ const Rosita = () => {
               users in Nigeria by increasing efficiency, reducing the risk of
               missed trips, and decreasing additional costs.
             </p>
-          </div>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Final Outcome
             </h2>
@@ -204,9 +247,20 @@ const Rosita = () => {
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-          </div>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Conducting Desk Research
             </h2>
@@ -224,13 +278,33 @@ const Rosita = () => {
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-            <img
+            <motion.img
+              initial={{opacity: 0, y: 100}}
+              whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
+              transition={{
+                type: 'tween',
+                delay: 0.2,
+                duration: 0.6,
+                ease: 'easeOut',
+              }}
               src={Research2}
               width={567}
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-            <p className='font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'>
+            <motion.p
+              initial={{opacity: 0, y: 100}}
+              whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
+              transition={{
+                type: 'tween',
+                delay: 0.2,
+                duration: 0.6,
+                ease: 'easeOut',
+              }}
+              className='font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'
+            >
               To further buttress and solidify the response gotten from this
               desk research, I did deeper research and got a paper published
               around the “Challenges of Rail Transportation in South West
@@ -239,10 +313,21 @@ const Rosita = () => {
               Sciences, School of Graduate Studies, University of Port Harcourt,
               Nigeria which is available{' '}
               <span className='underline font-bold text-lemon'>HERE</span>
-            </p>
-          </div>
+            </motion.p>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               User Research
             </h2>
@@ -255,15 +340,35 @@ const Rosita = () => {
               individual's experience with train booking and gather their pain
               points and challenges.
             </p>
-            <img
+            <motion.img
+              initial={{opacity: 0, y: 100}}
+              whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
+              transition={{
+                type: 'tween',
+                delay: 0.2,
+                duration: 0.6,
+                ease: 'easeOut',
+              }}
               src={Interview}
               width={567}
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-          </div>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Affinity Mapping
             </h2>
@@ -276,21 +381,50 @@ const Rosita = () => {
               individual's experience with train booking and gather their pain
               points and challenges.
             </p>
-            <img
+            <motion.img
+              initial={{opacity: 0, y: 100}}
+              whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
+              transition={{
+                type: 'tween',
+                delay: 0.2,
+                duration: 0.6,
+                ease: 'easeOut',
+              }}
               src={Map1}
               width={567}
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-            <img
+            <motion.img
+              initial={{opacity: 0, y: 100}}
+              whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
+              transition={{
+                type: 'tween',
+                delay: 0.2,
+                duration: 0.6,
+                ease: 'easeOut',
+              }}
               src={Map2}
               width={567}
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-          </div>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Feature Prioritization
             </h2>
@@ -305,9 +439,20 @@ const Rosita = () => {
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-          </div>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Constraints
             </h2>
@@ -321,8 +466,19 @@ const Rosita = () => {
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-          </div>
-          <div className='mt-[128px]'>
+          </motion.div>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-max text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Solution
             </h2>
@@ -336,19 +492,48 @@ const Rosita = () => {
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-            <img
+            <motion.img
+              initial={{opacity: 0, y: 100}}
+              whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
+              transition={{
+                type: 'tween',
+                delay: 0.2,
+                duration: 0.6,
+                ease: 'easeOut',
+              }}
               src={Screen2}
               width={567}
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-            <img
+            <motion.img
+              initial={{opacity: 0, y: 100}}
+              whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
+              transition={{
+                type: 'tween',
+                delay: 0.2,
+                duration: 0.6,
+                ease: 'easeOut',
+              }}
               src={Screen3}
               width={567}
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-            <p className='w-full mt-[80px] font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'>
+            <motion.p
+              initial={{opacity: 0, y: 100}}
+              whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
+              transition={{
+                type: 'tween',
+                delay: 0.2,
+                duration: 0.6,
+                ease: 'easeOut',
+              }}
+              className='w-full mt-[80px] font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'
+            >
               My solution is a digital ticket booking product that helps users
               interested in traveling to order and buy tickets from the comfort
               of their homes. The users can search for daily train movements
@@ -356,10 +541,21 @@ const Rosita = () => {
               minutes of upload, top up their rail cards, and pay for tickets
               with their debit card, PayPal, or their Apple or Google Pay wallet
               within seconds.
-            </p>
-          </div>
+            </motion.p>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Core Taskflow
             </h2>
@@ -370,15 +566,35 @@ const Rosita = () => {
               project, I had the constraint of exploring only one task flow, and
               the MVP will allow people to book a train.
             </p>
-            <img
+            <motion.img
+              initial={{opacity: 0, y: 100}}
+              whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
+              transition={{
+                type: 'tween',
+                delay: 0.2,
+                duration: 0.6,
+                ease: 'easeOut',
+              }}
               src={TaskFlow}
               width={567}
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-          </div>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Component Library and UI Explorations
             </h2>
@@ -389,9 +605,20 @@ const Rosita = () => {
               sections, and pages from scratch to ensure visual consistency and
               facilitate quick design changes.
             </p>
-          </div>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Icons and Illustrations
             </h2>
@@ -407,9 +634,20 @@ const Rosita = () => {
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-          </div>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Wireframe - Initial Sketches
             </h2>
@@ -423,15 +661,35 @@ const Rosita = () => {
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-            <img
+            <motion.img
+              initial={{opacity: 0, y: 100}}
+              whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
+              transition={{
+                type: 'tween',
+                delay: 0.2,
+                duration: 0.6,
+                ease: 'easeOut',
+              }}
               src={Sketch2}
               width={567}
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-          </div>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Onboarding Screens
             </h2>
@@ -447,9 +705,20 @@ const Rosita = () => {
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-          </div>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Book a Train
             </h2>
@@ -464,15 +733,35 @@ const Rosita = () => {
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-            <img
+            <motion.img
+              initial={{opacity: 0, y: 100}}
+              whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
+              transition={{
+                type: 'tween',
+                delay: 0.2,
+                duration: 0.6,
+                ease: 'easeOut',
+              }}
               src={Screen6}
               width={567}
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-          </div>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Payment Method
             </h2>
@@ -485,21 +774,41 @@ const Rosita = () => {
               accommodated the cash-only means of payment problem identified
               during the research phase.
             </p>
-            <img
+            <motion.img
+              initial={{opacity: 0, y: 100}}
+              whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
+              transition={{
+                type: 'tween',
+                delay: 0.2,
+                duration: 0.6,
+                ease: 'easeOut',
+              }}
               src={Screen7}
               width={567}
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-            <img
+            <motion.img
               src={Screen8}
               width={567}
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-          </div>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Verify Documents
             </h2>
@@ -510,18 +819,49 @@ const Rosita = () => {
               feature to the product that allows everyone to verify their
               documents with different ID cards.
             </p>
-            <img
+            <motion.img
+              initial={{opacity: 0, y: 100}}
+              whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
+              transition={{
+                type: 'tween',
+                delay: 0.2,
+                duration: 0.6,
+                ease: 'easeOut',
+              }}
               src={Screen9}
               width={567}
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-            <p className='font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'>
-              You can view the full design screens
+            <motion.p
+              initial={{opacity: 0, y: 100}}
+              whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
+              transition={{
+                type: 'tween',
+                delay: 0.2,
+                duration: 0.6,
+                ease: 'easeOut',
+              }}
+              className='font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'
+            >
+              You can view the full design screens{' '}
               <span className='underline font-bold text-lemon'>HERE</span>
-            </p>
-          </div>
-          <div className='mt-[128px]'>
+            </motion.p>
+          </motion.div>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Go-to-Market Strategy
             </h2>
@@ -540,9 +880,20 @@ const Rosita = () => {
               You can take a look at the detailed GTM Strategy{' '}
               <span className='underline font-bold text-lemon'>HERE</span>
             </p>
-          </div>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Style Guide and Colors
             </h2>
@@ -558,34 +909,89 @@ const Rosita = () => {
               className='w-full max-w-[881px] mt-[40px] mx-auto'
             />
 
-            <div className='ml-8 mt-[80px]'>
+            <motion.div
+              initial={{opacity: 0, y: 100}}
+              whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
+              transition={{
+                type: 'tween',
+                delay: 0.2,
+                duration: 0.6,
+                ease: 'easeOut',
+              }}
+              className='ml-8 mt-[80px]'
+            >
               <p className='font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'>
                 The idea for the primary color Blue (03045E) was borne out of
                 four thoughts:
               </p>
 
-              <p className='font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'>
+              <motion.p
+                initial={{opacity: 0, y: 100}}
+                whileInView={{opacity: 1, y: 0}}
+                viewport={{once: true}}
+                transition={{
+                  type: 'tween',
+                  delay: 0.2,
+                  duration: 0.6,
+                  ease: 'easeOut',
+                }}
+                className='font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'
+              >
                 1. <span className='font-bold text-white'>Trust: </span> Blue is
                 often associated with trust, dependability, and reliability. As
                 such, using blue as the primary color for a train booking app
                 can help establish a sense of trust between the user and the
                 app.
-              </p>
-              <p className='font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'>
+              </motion.p>
+              <motion.p
+                initial={{opacity: 0, y: 100}}
+                whileInView={{opacity: 1, y: 0}}
+                viewport={{once: true}}
+                transition={{
+                  type: 'tween',
+                  delay: 0.2,
+                  duration: 0.6,
+                  ease: 'easeOut',
+                }}
+                className='font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'
+              >
                 2. <span className='font-bold text-white'>Calmness: </span> Blue
                 is also often associated with calmness, serenity, and
                 relaxation. As booking a train can be a stressful experience for
                 some users, using blue as the primary color can help create a
                 calming effect and reduce anxiety.
-              </p>
-              <p className='font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'>
+              </motion.p>
+              <motion.p
+                initial={{opacity: 0, y: 100}}
+                whileInView={{opacity: 1, y: 0}}
+                viewport={{once: true}}
+                transition={{
+                  type: 'tween',
+                  delay: 0.2,
+                  duration: 0.6,
+                  ease: 'easeOut',
+                }}
+                className='font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'
+              >
                 2.{' '}
                 <span className='font-bold text-white'>Gender-neutral: </span>{' '}
                 Blue is a color that is generally considered to be
                 gender-neutral, which can be important for a train booking app
                 that is likely to have users of all genders.
-              </p>
-              <p className='font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'>
+              </motion.p>
+              <motion.p
+                initial={{opacity: 0, y: 100}}
+                whileInView={{opacity: 1, y: 0}}
+                viewport={{once: true}}
+                transition={{
+                  type: 'tween',
+                  delay: 0.2,
+                  duration: 0.6,
+                  ease: 'easeOut',
+                }}
+                className='font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'
+              >
                 2.{' '}
                 <span className='font-bold text-white'>
                   {' '}
@@ -595,10 +1001,21 @@ const Rosita = () => {
                 blue as the primary color for a train booking app can help to
                 create a connection in the user's mind between the app and
                 travel more broadly.
-              </p>
-            </div>
-          </div>
-          <div className='mt-[128px]'>
+              </motion.p>
+            </motion.div>
+          </motion.div>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Logo
             </h2>
@@ -608,8 +1025,19 @@ const Rosita = () => {
               height={367}
               className='w-full max-w-[881px] mt-[40px] mx-auto'
             />
-          </div>
-          <div className='mt-[128px]'>
+          </motion.div>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Typography
             </h2>
@@ -619,8 +1047,19 @@ const Rosita = () => {
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-          </div>
-          <div className='mt-[128px]'>
+          </motion.div>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Product KPIs and Success Metrics
             </h2>
@@ -630,8 +1069,19 @@ const Rosita = () => {
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-          </div>
-          <div className='mt-[128px]'>
+          </motion.div>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Validation
             </h2>
@@ -648,8 +1098,19 @@ const Rosita = () => {
               important for understanding success and elaborating the product
               roadmap.
             </p>
-          </div>
-          <div className='mt-[128px]'>
+          </motion.div>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Aftermath
             </h2>
@@ -666,7 +1127,7 @@ const Rosita = () => {
               precise booking dates and times, phone notifications for discount
               prices, and opportunities for ticket refunds.
             </p>
-          </div>
+          </motion.div>
           <Contact />
         </div>
       </div>

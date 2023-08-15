@@ -1,4 +1,5 @@
 import React from 'react';
+import {motion} from 'framer-motion';
 import Layout from '../../../components/Layout';
 import Contact from '../../../components/Contact';
 import Flowchart from '../../../images/checkbox-flow.png';
@@ -25,17 +26,17 @@ const Rosita = () => {
   return (
     <Layout>
       <div className=''>
-        <div className='relative w-full h-[640px] overflow-hidden relative top-[-120px] bg-fixed bg-[url("../images/commute-hero.png")]'>
+        <motion.div className='relative w-full h-[640px] bg-white overflow-hidden relative top-[-120px] bg-fixed bg-[url("../images/commute-hero.jpg")]'>
           <div className='w-full h-full absolute z-10 bg-black opacity-80 top-0 bottom-0 left-0 right-0'></div>
-        </div>
+        </motion.div>
         <div className='absolute top-[180px] lg:top-[245px] z-20 w-full  px-[20px] md:px-[40px] lg:px-[80px]'>
           <div className=''>
             <p className='text-lemon text-center text-[18px] font-mono font-semibold'>
               CheckBox Human Resource Management Software
             </p>
-            <h1 className='font-calibre font-bold text-center mx-auto max-w-[883px] text-[42px] md:text-[50px] lg:text-[60px] xl:text-[69px] leading-[120%]'>
+            <motion.h1 className='font-calibre font-bold text-center mx-auto max-w-[883px] text-[42px] md:text-[50px] lg:text-[60px] xl:text-[69px] leading-[120%]'>
               Your Management Goals in One Place
-            </h1>
+            </motion.h1>
           </div>
         </div>
         <div className='relative top-[-120px] w-full py-[0.8rem] px-[20px] md:px-[40px] lg:px-[80px] xl:px-[200px] flex flex-wrap gap-x-[20px] justify-between bg-white text-blue-100'>
@@ -79,7 +80,16 @@ const Rosita = () => {
               which we seek to solve.
             </p>
           </div>
-          <div>
+          <motion.div
+            initial={{opacity: 0, y: '10vh'}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.5,
+              ease: 'easeOut',
+            }}
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Objectives we are trying to solve for
             </h2>
@@ -140,8 +150,17 @@ const Rosita = () => {
                 up wizard, phone support, video tutorial, 24/7 live chat.
               </p>
             </div>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            initial={{opacity: 0, y: '10vh'}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.5,
+              ease: 'easeOut',
+            }}
+          >
             <h2 className='mt-[128px] font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[138%] text-white'>
               Solution
             </h2>
@@ -171,9 +190,18 @@ const Rosita = () => {
             <p className='font-calibre mb-4 font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'>
               7. Real-Time Notifications
             </p>
-          </div>
+          </motion.div>
 
-          <div>
+          <motion.div
+            initial={{opacity: 0, y: '10vh'}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.5,
+              ease: 'easeOut',
+            }}
+          >
             <h2 className='font-calibre mt-[128px] font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[138%] text-white'>
               Design Thinking Process
             </h2>
@@ -183,9 +211,19 @@ const Rosita = () => {
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-          </div>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            className='mt-[128px]'
+            initial={{opacity: 0, y: '10vh'}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.5,
+              ease: 'easeOut',
+            }}
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               User Persona
             </h2>
@@ -201,9 +239,19 @@ const Rosita = () => {
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-          </div>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: '10vh'}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.5,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Flowchart
             </h2>
@@ -213,9 +261,19 @@ const Rosita = () => {
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-          </div>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: '10vh'}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.5,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Wireframes
             </h2>
@@ -225,21 +283,47 @@ const Rosita = () => {
               Sign Up with Google feature was also added as demanded from the
               User Research.
             </p>
-            <img
+            <motion.img
+              initial={{opacity: 0, y: '10vh'}}
+              whileInView={{opacity: 1, y: 0}}
+              transition={{
+                type: 'tween',
+                delay: 0.2,
+                duration: 0.5,
+                ease: 'easeOut',
+              }}
               src={Screen1}
               width={567}
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-            <img
+            <motion.img
+              initial={{opacity: 0, y: '10vh'}}
+              whileInView={{opacity: 1, y: 0}}
+              transition={{
+                type: 'tween',
+                delay: 0.2,
+                duration: 0.5,
+                ease: 'easeOut',
+              }}
               src={Screen2}
               width={567}
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-          </div>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: '10vh'}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.5,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Main Dashboard
             </h2>
@@ -255,9 +339,19 @@ const Rosita = () => {
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-          </div>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: '10vh'}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.5,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Payroll
             </h2>
@@ -274,9 +368,19 @@ const Rosita = () => {
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-          </div>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: '10vh'}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.5,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-max text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Company Structure
             </h2>
@@ -292,9 +396,19 @@ const Rosita = () => {
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-          </div>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: '10vh'}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.5,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-max text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Performance Management
             </h2>
@@ -313,9 +427,19 @@ const Rosita = () => {
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-          </div>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: '10vh'}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.5,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Report
             </h2>
@@ -330,9 +454,19 @@ const Rosita = () => {
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-          </div>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: '10vh'}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.5,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Projects
             </h2>
@@ -342,20 +476,46 @@ const Rosita = () => {
               projects, assign team members and team leaders to them, and
               monitor progress.
             </p>
-            <img
+            <motion.img
+              initial={{opacity: 0, y: '10vh'}}
+              whileInView={{opacity: 1, y: 0}}
+              transition={{
+                type: 'tween',
+                delay: 0.2,
+                duration: 0.5,
+                ease: 'easeOut',
+              }}
               src={Screen8}
               width={567}
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-            <img
+            <motion.img
+              initial={{opacity: 0, y: '10vh'}}
+              whileInView={{opacity: 1, y: 0}}
+              transition={{
+                type: 'tween',
+                delay: 0.2,
+                duration: 0.5,
+                ease: 'easeOut',
+              }}
               src={Screen9}
               width={567}
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-          </div>
-          <div className='mt-[128px]'>
+          </motion.div>
+          <motion.div
+            initial={{opacity: 0, y: '10vh'}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.5,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Accessories Management
             </h2>
@@ -363,15 +523,33 @@ const Rosita = () => {
               Assign accessories and gadgets to employees, keep track of the
               gadget’s health and easily find gadgets assigned to employees.
             </p>
-            <img
+            <motion.img
+              initial={{opacity: 0, y: '10vh'}}
+              whileInView={{opacity: 1, y: 0}}
+              transition={{
+                type: 'tween',
+                delay: 0.2,
+                duration: 0.5,
+                ease: 'easeOut',
+              }}
               src={Screen10}
               width={567}
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-          </div>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: '10vh'}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.5,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Notifications
             </h2>
@@ -386,9 +564,19 @@ const Rosita = () => {
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-          </div>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: '10vh'}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.5,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Leave Management
             </h2>
@@ -397,25 +585,61 @@ const Rosita = () => {
               progress, and the type of leave. Also, an option to apply for
               leave on behalf of an employee, approve or decline leave requests.
             </p>
-            <img
+            <motion.img
+              initial={{opacity: 0, y: '10vh'}}
+              whileInView={{opacity: 1, y: 0}}
+              transition={{
+                type: 'tween',
+                delay: 0.2,
+                duration: 0.5,
+                ease: 'easeOut',
+              }}
               src={Screen12}
               width={567}
               height={367}
               className='w-full max-w-[936px] mt-[40px] mx-auto'
             />
-          </div>
-          <div className='mt-[128px]'>
+          </motion.div>
+          <motion.div
+            initial={{opacity: 0, y: '10vh'}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.5,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Logo
             </h2>
-            <img
+            <motion.img
+              initial={{opacity: 0, y: '10vh'}}
+              whileInView={{opacity: 1, y: 0}}
+              transition={{
+                type: 'tween',
+                delay: 0.2,
+                duration: 0.5,
+                ease: 'easeOut',
+              }}
               src={Logo}
               width={567}
               height={367}
               className='w-full max-w-[936px] mt-[40px] mx-auto'
             />
-          </div>
-          <div className='mt-[128px]'>
+          </motion.div>
+          <motion.div
+            initial={{opacity: 0, y: '10vh'}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.5,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Typography
             </h2>
@@ -425,8 +649,18 @@ const Rosita = () => {
               height={367}
               className='w-full max-w-[936px] mt-[40px] mx-auto'
             />
-          </div>
-          <div className='mt-[128px]'>
+          </motion.div>
+          <motion.div
+            initial={{opacity: 0, y: '10vh'}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.5,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Conclusion
             </h2>
@@ -437,13 +671,21 @@ const Rosita = () => {
               with more features to improve the overall user experience and
               aesthetic beauty
             </p>
-            <img
+            <motion.img
+              initial={{opacity: 0, y: '10vh'}}
+              whileInView={{opacity: 1, y: 0}}
+              transition={{
+                type: 'tween',
+                delay: 0.2,
+                duration: 0.5,
+                ease: 'easeOut',
+              }}
               src={Conclusion}
               width={567}
               height={367}
               className='w-full max-w-[936px] mt-[40px] mx-auto'
             />
-          </div>
+          </motion.div>
           <Contact />
         </div>
       </div>

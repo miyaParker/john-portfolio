@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useRef} from 'react';
+import {motion, useScroll} from 'framer-motion';
 import Layout from '../../../components/Layout';
 import Research from '../../../images/desk-research.png';
 import Results from '../../../images/results.png';
@@ -25,10 +26,15 @@ import Proto from '../../../images/proto.png';
 import Contact from '../../../components/Contact';
 
 const Rosita = () => {
+  const ref = useRef(null);
+  const {scrollYProgress} = useScroll({
+    target: ref,
+    offset: ['start end', 'end end'],
+  });
   return (
     <Layout>
       <div className=''>
-        <div className='relative w-full h-[640px] overflow-hidden relative top-[-120px] bg-fixed bg-[url("../images/rosita-hero.svg")]'>
+        <div className='relative w-full h-[640px] overflow-hidden relative top-[-120px] bg-fixed bg-[url("../images/rosita-hero.png")]'>
           <div className='w-full h-full absolute z-10 bg-black opacity-80 top-0 bottom-0 left-0 right-0'></div>
         </div>
         <div className='absolute top-[180px] lg:top-[245px] z-20 w-full  px-[20px] md:px-[40px] lg:px-[80px]'>
@@ -67,7 +73,18 @@ const Rosita = () => {
             </p>
           </div>
         </div>
-        <div className='w-full px-[20px] md:px-[40px] lg:px-[80px] xl:px-[200px]'>
+        <div
+          initial={{opacity: 0, y: 100}}
+          whileInView={{opacity: 1, y: 0}}
+          viewport={{once: true}}
+          transition={{
+            type: 'tween',
+            delay: 0.2,
+            duration: 0.4,
+            ease: 'easeOut',
+          }}
+          className='w-full px-[20px] md:px-[40px] lg:px-[80px] xl:px-[200px]'
+        >
           <div className='mb-[80px]'>
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Highlight
@@ -81,7 +98,18 @@ const Rosita = () => {
               COVID-19.
             </p>
           </div>
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Introducing Rosita Mobile App
             </h2>
@@ -148,7 +176,7 @@ const Rosita = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
           <div className='mt-[128px] flex flex-col lg:flex-row gap-[18px] justify-between lg:items-center'>
             <div>
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
@@ -161,39 +189,90 @@ const Rosita = () => {
               </p>
             </div>
             <div className='grid grid-cols-2 gap-[20px] lg:gap-[40px] font-calibre'>
-              <div className='bg-blue-200 py-[32px] px-[48px] flex flex-col justify-center items-center'>
+              <motion.div
+                initial={{scale: 0.8}}
+                whileInView={{scale: 1}}
+                transition={{
+                  type: 'spring',
+                  duration: 0.2,
+                  ease: 'easeOut',
+                  stiffness: 120,
+                }}
+                className='bg-blue-200 py-[32px] px-[48px] flex flex-col justify-center items-center'
+              >
                 <p className='leading-[267%] text-[16px] lg:text-[18px] text-center'>
                   Market Size
                 </p>
                 <p className='font-bold text-[35px] leading-[175%] text-center'>
                   $834.7 Million
                 </p>
-              </div>
-              <div className='bg-white text-blue-200 py-[32px] px-[48px]  flex flex-col justify-center items-center'>
+              </motion.div>
+              <motion.div
+                initial={{scale: 0.8}}
+                whileInView={{scale: 1}}
+                transition={{
+                  type: 'spring',
+                  duration: 0.2,
+                  ease: 'easeOut',
+                  stiffness: 120,
+                }}
+                className='bg-white text-blue-200 py-[32px] px-[48px]  flex flex-col justify-center items-center'
+              >
                 <p className='leading-[267%] text-[16px] lg:text-[18px] text-center'>
                   Total Population
                 </p>
                 <p className='font-bold text-[35px] leading-[175%] text-center'>
                   200 Million
                 </p>
-              </div>
-              <div className='bg-white text-blue-200 py-[32px] px-[48px] flex flex-col justify-center items-center'>
+              </motion.div>
+              <motion.div
+                initial={{scale: 0.8}}
+                whileInView={{scale: 1}}
+                transition={{
+                  type: 'spring',
+                  duration: 0.2,
+                  ease: 'easeOut',
+                  stiffness: 120,
+                }}
+                className='bg-white text-blue-200 py-[32px] px-[48px] flex flex-col justify-center items-center'
+              >
                 <p className='leading-[267%] text-[16px] lg:text-[18px] text-center'>
                   Growth Rate
                 </p>
                 <p className='font-bold text-[35px] leading-[175%]'>12.2%</p>
-              </div>
-              <div className='bg-blue-200 py-[32px] px-[48px] flex flex-col justify-center items-center'>
+              </motion.div>
+              <motion.div
+                initial={{scale: 0.8}}
+                whileInView={{scale: 1}}
+                transition={{
+                  type: 'spring',
+                  duration: 0.2,
+                  ease: 'easeOut',
+                  stiffness: 120,
+                }}
+                className='bg-blue-200 py-[32px] px-[48px] flex flex-col justify-center items-center'
+              >
                 <p className='leading-[267%] text-[16px] lg:text-[18px] text-center'>
                   Key Region
                 </p>
                 <p className='font-bold text-[35px] leading-[175%] text-center'>
                   North West
                 </p>
-              </div>
+              </motion.div>
             </div>
           </div>
-          <div className='mt-[128px] flex flex-col lg:flex-row gap-[18px] justify-between'>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px] flex flex-col lg:flex-row gap-[18px] justify-between'
+          >
             <div>
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[138%] text-white'>
                 Defining the problem
@@ -220,8 +299,19 @@ const Rosita = () => {
                 restaurant, ultimately leading to increased revenue.
               </p>
             </div>
-          </div>
-          <div className='mt-[128px]'>
+          </motion.div>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Hypothesis Statement
             </h2>
@@ -232,9 +322,20 @@ const Rosita = () => {
                 not allow leave his workspace for a long time to get food.
               </p>
             </div>
-          </div>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Conducting Desk Research
             </h2>
@@ -250,46 +351,134 @@ const Rosita = () => {
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-          </div>
+          </motion.div>
 
           <div className='mt-[128px]'>
-            <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
+            <motion.h2
+              initial={{opacity: 0, y: 100}}
+              whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
+              transition={{
+                type: 'tween',
+                delay: 0.2,
+                duration: 0.6,
+                ease: 'easeOut',
+              }}
+              className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'
+            >
               User Research
-            </h2>
-            <p className='font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'>
+            </motion.h2>
+            <motion.p
+              initial={{opacity: 0, y: 100}}
+              whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
+              transition={{
+                type: 'tween',
+                delay: 0.2,
+                duration: 0.6,
+                ease: 'easeOut',
+              }}
+              className='font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'
+            >
               From here, I started interviews with our customers. Watching them
               interact with me gave me physical cues that could affect the
               research outcomes. To help capture observations, I took detailed
               notes and even recorded some sessions with users. For the purposes
               of the interview, I took into consideration some selected
               demographics, which included:
-            </p>
+            </motion.p>
             <div className='ml-8'>
-              <p className='flex gap-x-4 items-center font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'>
+              <motion.p
+                initial={{opacity: 0, y: 100}}
+                whileInView={{opacity: 1, y: 0}}
+                viewport={{once: true}}
+                transition={{
+                  type: 'tween',
+                  delay: 0.2,
+                  duration: 0.6,
+                  ease: 'easeOut',
+                }}
+                className='flex gap-x-4 items-center font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'
+              >
                 <span className='block w-2 h-2 bg-gray leading-[150%] rounded-full'></span>
                 Ages 18–62
-              </p>
-              <p className='flex gap-x-4 items-center font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'>
+              </motion.p>
+              <motion.p
+                initial={{opacity: 0, y: 100}}
+                whileInView={{opacity: 1, y: 0}}
+                viewport={{once: true}}
+                transition={{
+                  type: 'tween',
+                  delay: 0.2,
+                  duration: 0.6,
+                  ease: 'easeOut',
+                }}
+                className='flex gap-x-4 items-center font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'
+              >
                 <span className='block w-2 h-2 bg-gray leading-[150%] rounded-full'></span>
                 Lives in metropolitan or suburban areas
-              </p>
-              <p className='flex gap-x-4 items-center font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'>
+              </motion.p>
+              <motion.p
+                initial={{opacity: 0, y: 100}}
+                whileInView={{opacity: 1, y: 0}}
+                viewport={{once: true}}
+                transition={{
+                  type: 'tween',
+                  delay: 0.2,
+                  duration: 0.6,
+                  ease: 'easeOut',
+                }}
+                className='flex gap-x-4 items-center font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'
+              >
                 <span className='block w-2 h-2 bg-gray leading-[150%] rounded-full'></span>
                 Include participants of different genders
-              </p>
-              <p className='flex gap-x-4 items-center font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'>
+              </motion.p>
+              <motion.p
+                initial={{opacity: 0, y: 100}}
+                whileInView={{opacity: 1, y: 0}}
+                viewport={{once: true}}
+                transition={{
+                  type: 'tween',
+                  delay: 0.2,
+                  duration: 0.6,
+                  ease: 'easeOut',
+                }}
+                className='flex gap-x-4 items-center font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'
+              >
                 <span className='block w-2 h-2 bg-gray leading-[150%] rounded-full'></span>
                 Include participants with different abilities
-              </p>
-              <p className='flex gap-x-4 items-center font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'>
+              </motion.p>
+              <motion.p
+                initial={{opacity: 0, y: 100}}
+                whileInView={{opacity: 1, y: 0}}
+                viewport={{once: true}}
+                transition={{
+                  type: 'tween',
+                  delay: 0.2,
+                  duration: 0.6,
+                  ease: 'easeOut',
+                }}
+                className='flex gap-x-4 items-center font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'
+              >
                 <span className='block w-2 h-2 bg-gray leading-[150%] rounded-full'></span>
                 Working professionals busy with work duties are conscious about
                 budget and want to eat healthily.
-              </p>
+              </motion.p>
             </div>
           </div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Insights from the research
             </h2>
@@ -299,9 +488,20 @@ const Rosita = () => {
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-          </div>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Feature Prioritization
             </h2>
@@ -311,9 +511,20 @@ const Rosita = () => {
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-          </div>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Competitive Audit
             </h2>
@@ -335,9 +546,20 @@ const Rosita = () => {
               The Comprehensive Audit is available{' '}
               <span className='underline'>HERE</span>
             </p>
-          </div>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Conducting Desk Research
             </h2>
@@ -353,9 +575,20 @@ const Rosita = () => {
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-          </div>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Constraints
             </h2>
@@ -369,8 +602,19 @@ const Rosita = () => {
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-          </div>
-          <div className='mt-[128px]'>
+          </motion.div>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Sitemap
             </h2>
@@ -385,10 +629,10 @@ const Rosita = () => {
             <p className='font-calibre font-bold leading-[150%] mt-[13px] text-lemon text-[22px] md:text-[24px] lg:text-[28px]'>
               The Sitemap is available <span className='underline'>HERE</span>
             </p>
-          </div>
+          </motion.div>
 
           <div className='mt-[128px] flex flex-col lg:flex-row gap-[18px] justify-between'>
-            <h2 className='font-calibre font-semibold w-max text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
+            <h2 className='self-start top-10 sticky z-10 font-calibre font-semibold w-max text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Designing the Solution
             </h2>
             <div className='font-calibre'>
@@ -409,7 +653,7 @@ const Rosita = () => {
             </div>
           </div>
           <div className='mt-[128px] flex flex-col lg:flex-row gap-[18px] justify-between'>
-            <h2 className='font-calibre font-semibold w-max text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
+            <h2 className='self-start top-10 sticky z-10 font-calibre font-semibold w-max text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Final Solution
             </h2>
             <p className='max-w-[750px] font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'>
@@ -418,7 +662,18 @@ const Rosita = () => {
             </p>
           </div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Registration
             </h2>
@@ -436,9 +691,20 @@ const Rosita = () => {
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-          </div>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               End-to-End Screens
             </h2>
@@ -446,7 +712,18 @@ const Rosita = () => {
               Each final implementation went through a series of iterations of
               user testing to meet the specific need of the final customer.
             </p>
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[40px] lg:gap-x-[80px] lg:gap-y-[20px] font-calibre'>
+            <motion.div
+              initial={{opacity: 0, y: 100}}
+              whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
+              transition={{
+                type: 'tween',
+                delay: 0.2,
+                duration: 0.6,
+                ease: 'easeOut',
+              }}
+              className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[40px] lg:gap-x-[80px] lg:gap-y-[20px] font-calibre'
+            >
               <img
                 src={RositaMob1}
                 width={567}
@@ -519,20 +796,47 @@ const Rosita = () => {
                 height={367}
                 className='w-full max-w-[1024px] mt-[40px] mx-auto'
               />
-            </div>
-            <img
+            </motion.div>
+            <motion.img
+              initial={{opacity: 0, y: 100}}
+              whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
+              transition={{
+                type: 'tween',
+                delay: 0.2,
+                duration: 0.6,
+                ease: 'easeOut',
+              }}
               src={Rosita1}
               width={567}
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-            <img
+            <motion.img
+              initial={{opacity: 0, y: 100}}
+              whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
+              transition={{
+                type: 'tween',
+                delay: 0.2,
+                duration: 0.6,
+                ease: 'easeOut',
+              }}
               src={Rosita2}
               width={567}
               height={367}
               className='w-full max-w-[1024px] mt-[40px] mx-auto'
             />
-            <img
+            <motion.img
+              initial={{opacity: 0, y: 100}}
+              whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
+              transition={{
+                type: 'tween',
+                delay: 0.2,
+                duration: 0.6,
+                ease: 'easeOut',
+              }}
               src={Rosita3}
               width={567}
               height={367}
@@ -544,9 +848,20 @@ const Rosita = () => {
                 Here is the final prototype.
               </span>
             </p>
-          </div>
+          </motion.div>
 
-          <div className='mt-[128px]'>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px]'
+          >
             <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Usability Testing
             </h2>
@@ -564,34 +879,122 @@ const Rosita = () => {
             </p>
 
             <div className='ml-8'>
-              <p className='flex gap-x-4 items-center font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'>
+              <motion.p
+                initial={{opacity: 0, y: 100}}
+                whileInView={{opacity: 1, y: 0}}
+                viewport={{once: true}}
+                transition={{
+                  type: 'tween',
+                  delay: 0.2,
+                  duration: 0.6,
+                  ease: 'easeOut',
+                }}
+                className='flex gap-x-4 items-center font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'
+              >
                 1. All the screens were neat, clean, and easy to understand
-              </p>
-              <p className='flex gap-x-4 items-center font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'>
+              </motion.p>
+              <motion.p
+                initial={{opacity: 0, y: 100}}
+                whileInView={{opacity: 1, y: 0}}
+                viewport={{once: true}}
+                transition={{
+                  type: 'tween',
+                  delay: 0.2,
+                  duration: 0.6,
+                  ease: 'easeOut',
+                }}
+                className='flex gap-x-4 items-center font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'
+              >
                 2. Process of ordering food was seamless and quick
-              </p>
-              <p className='flex gap-x-4 items-center font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'>
+              </motion.p>
+              <motion.p
+                initial={{opacity: 0, y: 100}}
+                whileInView={{opacity: 1, y: 0}}
+                viewport={{once: true}}
+                transition={{
+                  type: 'tween',
+                  delay: 0.2,
+                  duration: 0.6,
+                  ease: 'easeOut',
+                }}
+                className='flex gap-x-4 items-center font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'
+              >
                 3. It would be better if I could customize my meals
-              </p>
-              <p className='flex gap-x-4 items-center font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'>
+              </motion.p>
+              <motion.p
+                initial={{opacity: 0, y: 100}}
+                whileInView={{opacity: 1, y: 0}}
+                viewport={{once: true}}
+                transition={{
+                  type: 'tween',
+                  delay: 0.2,
+                  duration: 0.6,
+                  ease: 'easeOut',
+                }}
+                className='flex gap-x-4 items-center font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'
+              >
                 4. Icons and navigation were spelled out correctly
-              </p>
+              </motion.p>
             </div>
-            <p className='font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'>
+            <motion.p
+              initial={{opacity: 0, y: 100}}
+              whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
+              transition={{
+                type: 'tween',
+                delay: 0.2,
+                duration: 0.6,
+                ease: 'easeOut',
+              }}
+              className='font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'
+            >
               From the overall test findings, it can be inferred that the
               concept would succeed in performing specific tasks. It has helped
               uncover usability issues that need to be addressed.
-            </p>
-          </div>
-          <p className='font-calibre leading-[150%] mt-[13px] text-lemon font-bold text-[22px] md:text-[24px] lg:text-[28px]'>
+            </motion.p>
+          </motion.div>
+          <motion.p
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='font-calibre leading-[150%] mt-[13px] text-lemon font-bold text-[22px] md:text-[24px] lg:text-[28px]'
+          >
             See the Rosita Cuisine Usability Test Plan{' '}
             <span className='underline'>HERE</span>
-          </p>
-          <div className='mt-[128px] flex flex-col lg:flex-row gap-[18px] justify-between'>
-            <h2 className='font-calibre font-semibold w-max text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
+          </motion.p>
+          <motion.div
+            initial={{opacity: 0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{
+              type: 'tween',
+              delay: 0.2,
+              duration: 0.6,
+              ease: 'easeOut',
+            }}
+            className='mt-[128px] flex flex-col lg:flex-row gap-[18px] justify-between'
+          >
+            <h2 className='self-start top-10 sticky z-10 font-calibre font-semibold w-max text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Major Takeaways
             </h2>
-            <div className='font-calibre'>
+            <motion.div
+              initial={{opacity: 0, y: 100}}
+              whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
+              transition={{
+                type: 'tween',
+                delay: 0.2,
+                duration: 0.6,
+                ease: 'easeOut',
+              }}
+              className='font-calibre'
+            >
               <p className='max-w-[750px] font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'>
                 I found this task amazing as it opened my mind to various
                 techniques and processes for creating solutions to pertinent
@@ -614,8 +1017,8 @@ const Rosita = () => {
                 collaborating and simultaneously meeting with stakeholders to
                 get the result.
               </p>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
           <Contact />
         </div>
       </div>
