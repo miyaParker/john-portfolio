@@ -4,8 +4,8 @@ import Michael from '../../images/michael.svg';
 import Bridget from '../../images/bridget.svg';
 import Quotes from '../../images/quotes.svg';
 import AnayoMin from '../../images/anayo-min.png';
-// import Michael from '../../images/michael.svg';
-// import Bridget from '../../images/bridget.svg';
+import MichaelMin from '../../images/michael-min.png';
+import BridgetMin from '../../images/bridget-min.png';
 import {motion} from 'framer-motion';
 
 const Testimonials = () => {
@@ -25,7 +25,7 @@ const Testimonials = () => {
       role: 'Senior Product Designer',
       company: 'NOMBA',
       image: Michael,
-      imageMin: AnayoMin,
+      imageMin: MichaelMin,
 
       quote:
         'John is a highly skilled designer. He is not only friendly and helpful but also goes above and beyond to maintain the team spirit. Moreover, I have seen him working his way through challenges and crises. He uses innovative approaches to tackling and solving problems. ',
@@ -35,7 +35,7 @@ const Testimonials = () => {
       role: 'Product Manager',
       company: 'e-LIMU WORLD',
       image: Bridget,
-      imageMin: AnayoMin,
+      imageMin: BridgetMin,
       quote:
         'I had the privilege of working with John and can confidently say that he is a creative designer. Not only does he possess a good level of creativity and design skills, but he also can align his designs with business goals and user needs.',
     },
