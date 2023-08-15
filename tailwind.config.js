@@ -13,6 +13,7 @@ module.exports = {
       colors: {
         lemon: '#64FFDA',
         gray: '#8892B0',
+        silver: '#959595',
         'blue-50': '#CCD6F6',
         'blue-100': '#0A192F',
         'blue-200': '#112240',

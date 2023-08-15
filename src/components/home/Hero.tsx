@@ -8,13 +8,13 @@ const Hero = () => {
       initial={{opacity: 0}}
       whileInView={{opacity: 1}}
       transition={{type: 'tween', delay: 0.2, duration: 0.4, ease: 'easeOut'}}
-      className='h-screen px-[20px] md:px-[40px] lg:px-[80px] xl:px-[120px] 2xl:px-[204px] pt-[300px]'
+      className='h-max mb-[80px] px-[20px] md:px-[40px] lg:px-[80px] xl:px-[120px] 2xl:px-[204px] pt-[120px] md:pt-[200px] lg:pt-[300px]'
     >
       <motion.p
         initial={{opacity: 0, overflow: '50%', y: 30}}
         whileInView={{opacity: 1, overflow: '100%', y: 0}}
         transition={{type: 'tween', delay: 0.2, duration: 0.3, ease: 'easeOut'}}
-        className='font-calibre font-medium text-[60px] md:text-[76px] lg:text-[86px] text-white leading-[120%]'
+        className='font-calibre font-medium text-[48px] sm:text-[60px] md:text-[76px] lg:text-[86px] text-white leading-[120%]'
       >
         Hi, my name is
       </motion.p>

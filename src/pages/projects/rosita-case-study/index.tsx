@@ -1,5 +1,5 @@
-import React, {useRef} from 'react';
-import {motion, useScroll} from 'framer-motion';
+import React from 'react';
+import {motion} from 'framer-motion';
 import Layout from '../../../components/Layout';
 import Research from '../../../images/desk-research.png';
 import Results from '../../../images/results.png';
@@ -26,11 +26,6 @@ import Proto from '../../../images/proto.png';
 import Contact from '../../../components/Contact';
 
 const Rosita = () => {
-  const ref = useRef(null);
-  const {scrollYProgress} = useScroll({
-    target: ref,
-    offset: ['start end', 'end end'],
-  });
   return (
     <Layout>
       <div className=''>
