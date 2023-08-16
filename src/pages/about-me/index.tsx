@@ -12,8 +12,8 @@ import Food2 from '../../images/food2.svg';
 import Food3 from '../../images/food3.svg';
 import Food4 from '../../images/food4.svg';
 
+import Play from '../../images/play.png';
 import Book from '../../images/book.svg';
-import Arrow from '../../images/arrow-right.png';
 
 const About = () => {
   return (
@@ -78,7 +78,7 @@ const About = () => {
                 are Indian, Italian and Chinese.
               </p>
             </div>
-            <div className='grid grid-cols-2 w-full max-w-[500px] md:w-[60%] mx-auto lg:mx-0  lg:w-[45%] justify-items-center'>
+            <div className='mt-[80px] sm:mt-[100px] lg:mt-0 grid grid-cols-2 w-full max-w-[500px] md:w-[60%] mx-auto lg:mx-0  lg:w-[45%] justify-items-center'>
               <motion.img
                 initial={{scale: 0.8}}
                 whileInView={{scale: 1}}
@@ -311,74 +311,66 @@ const About = () => {
             <div className='mt-[30px] sm:mt-[35px] md:mt-[40px] lg:mt-[50px] border border-white border-1 w-[35px]'></div>
           </div>
           <div className='w-full flex flex-wrap flex-row mt-[70px] gap-x-[1.5%] md:gap-x-[1.5%] gap-y-[50px]'>
-            <div className='w-full sm:w-[30%] md:w-[18%] rounded-[10px]'>
-              <div className='h-[320px] rounded-[10px] bg-[url("../images/music1.jpeg")] bg-cover bg-center'></div>
+            <div className='relative w-full h-[320px] sm:w-[30%] md:w-[18%] rounded-[10px]'>
+              <div className='h-full rounded-[10px] bg-[url("../images/music1.jpeg")] bg-cover bg-center'></div>
               <a
                 target='_blank'
                 href='https://open.spotify.com/playlist/08FF1W5WIXNrtJ1SKdhT1h?si=acc16f8d06474d1e'
               >
-                <div className='w-max flex mt-[30px] lg:mt-[40px] gap-[8px]'>
-                  <p className='underline text-lemon text-[13px] md:text-[14px] lg:text-[15px] font-mono font-medium'>
-                    Listen
-                  </p>
-                  <img src={Arrow} width={24} height={24} />
+                <div className='z-20 flex items-center justify-center absolute bottom-[20px] right-4 bg-[#1ED760] opacity-60  rounded-full w-[40px] h-[40px]'>
+                  <img src={Play} width={18} height={18} />
                 </div>
               </a>
+              <div className='rounded-l-[10px] rounded-r-[10px] z-10 w-full bg-gradient-to-t from-blue-200 h-[160px] absolute bottom-0'></div>
             </div>
-            <div className='w-full sm:w-[30%] md:w-[18%] rounded-[10px]'>
-              <div className=' h-[320px] rounded-[10px] bg-[url("../images/music2.jpeg")] bg-cover bg-center'></div>
+
+            <div className='relative h-[320px] w-full sm:w-[30%] md:w-[18%] rounded-[10px]'>
+              <div className='w-full h-full rounded-[10px] bg-[url("../images/music2.jpeg")] bg-cover bg-center'></div>
               <a
                 target='_blank'
                 href='https://open.spotify.com/playlist/6be0keisznbaU6WKkdvW2c?si=b316bb5e154841db&nd=1'
               >
-                <div className='w-max flex mt-[30px] lg:mt-[40px] gap-[8px]'>
-                  <p className='underline text-lemon text-[13px] md:text-[14px] lg:text-[15px] font-mono font-medium'>
-                    Listen
-                  </p>
-                  <img src={Arrow} width={24} height={24} />
+                <div className='z-20 flex items-center justify-center absolute bottom-[20px] right-4 bg-[#1ED760] opacity-60  rounded-full w-[40px] h-[40px]'>
+                  <img src={Play} width={18} height={18} />
                 </div>
               </a>
+              <div className='rounded-l-[10px] rounded-r-[10px] z-10 w-full bg-gradient-to-t from-blue-200 h-[160px] absolute bottom-0'></div>
             </div>
-            <div className='w-full sm:w-[30%] md:w-[18%] rounded-[10px]'>
+
+            <div className='relative h-[320px] w-full sm:w-[30%] md:w-[18%] rounded-[10px]'>
               <div className=' h-[320px] rounded-[10px] bg-[url("../images/music3.jpeg")] bg-cover bg-center'></div>
               <a
                 target='_blank'
                 href='https://open.spotify.com/playlist/0fwYgTrDHYuRpyWKVN9ptp?si=dded9d88c5af4635&nd=1'
               >
-                <div className='w-max flex mt-[30px] lg:mt-[40px] gap-[8px]'>
-                  <p className='underline text-lemon text-[13px] md:text-[14px] lg:text-[15px] font-mono font-medium'>
-                    Listen
-                  </p>
-                  <img src={Arrow} width={24} height={24} />
+                <div className='z-20 flex items-center justify-center absolute bottom-[20px] right-4 bg-[#1ED760] opacity-60  rounded-full w-[40px] h-[40px]'>
+                  <img src={Play} width={18} height={18} />
                 </div>
               </a>
+              <div className='rounded-l-[10px] rounded-r-[10px] z-10 w-full bg-gradient-to-t from-blue-200 h-[160px] absolute bottom-0'></div>
             </div>
-            <div className='w-full sm:w-[30%] md:w-[18%] rounded-[10px]'>
+            <div className='relative h-[320px] w-full sm:w-[30%] md:w-[18%] rounded-[10px]'>
               <div className='h-[320px] rounded-[10px] bg-[url("../images/music4.jpeg")] bg-cover bg-center'></div>
               <a
                 target='_blank'
                 href='https://open.spotify.com/playlist/37i9dQZF1DWWxPM4nWdhyI?si=3c74330a1d434585&nd=1'
               >
-                <div className='w-max flex mt-[30px] lg:mt-[40px] gap-[8px]'>
-                  <p className='underline text-lemon text-[13px] md:text-[14px] lg:text-[15px] font-mono font-medium'>
-                    Listen
-                  </p>
-                  <img src={Arrow} width={24} height={24} />
+                <div className='z-20 flex items-center justify-center absolute bottom-[20px] right-4 bg-[#1ED760] opacity-60  rounded-full w-[40px] h-[40px]'>
+                  <img src={Play} width={18} height={18} />
                 </div>
               </a>
+              <div className='rounded-l-[10px] rounded-r-[10px] z-10 w-full bg-gradient-to-t from-blue-200 h-[160px] absolute bottom-0'></div>
             </div>
-            <div className='w-full sm:w-[30%] md:w-[18%] rounded-[10px]'>
+            <div className='relative h-[320px] w-full sm:w-[30%] md:w-[18%] rounded-[10px]'>
               <div className='h-[320px] rounded-[10px] bg-[url("../images/music5.jpeg")] bg-cover bg-center'></div>
               <a
                 target='_blank'
                 href='https://open.spotify.com/playlist/0SAWp4yNyF5bA4VLmWAHUc?si=4b9bd62ec75f445b'
               >
-                <div className='w-max flex mt-[30px] lg:mt-[40px] gap-[8px]'>
-                  <p className='underline text-lemon text-[13px] md:text-[14px] lg:text-[15px] font-mono font-medium'>
-                    Listen
-                  </p>
-                  <img src={Arrow} width={24} height={24} />
+                <div className='z-20 flex items-center justify-center absolute bottom-[20px] right-4 bg-[#1ED760] opacity-60  rounded-full w-[40px] h-[40px]'>
+                  <img src={Play} width={18} height={18} />
                 </div>
+                <div className='rounded-l-[10px] rounded-r-[10px] z-10 w-full bg-gradient-to-t from-blue-200 h-[160px] absolute bottom-0'></div>
               </a>
             </div>
           </div>
