@@ -12,7 +12,7 @@ const Projects = () => {
     <motion.div
       initial={{opacity: 0, y: '10vh'}}
       whileInView={{opacity: 1, y: 0}}
-      transition={{type: 'tween', delay: 0.2, duration: 0.6, ease: 'easeOut'}}
+      transition={{type: 'tween', duration: 0.6, ease: 'easeOut'}}
       className='px-[20px] md:px-[40px] lg:px-[80px] xl:px-[120px] 2xl:px-[204px]'
     >
       <p className='pt-[120px] pt-[200px] lg:pt-[300px] text-center uppercase font-mono lg:text-[18px] text-lemon uppercase mb-[20px] font-mono leading-[28px]'>

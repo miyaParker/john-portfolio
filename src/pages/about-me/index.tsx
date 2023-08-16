@@ -41,7 +41,6 @@ const About = () => {
           viewport={{once: true}}
           transition={{
             type: 'tween',
-            delay: 0.2,
             duration: 0.6,
             ease: 'easeOut',
           }}
