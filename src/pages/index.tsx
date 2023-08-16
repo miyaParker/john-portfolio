@@ -18,12 +18,11 @@ const IndexPage: React.FC<PageProps> = () => {
     <Layout pathName='/'>
       <div className='hidden lg:block max-w-[2560px]:hidden'>
         <motion.div
-          initial={{opacity: 0, y: 200}}
+          initial={{opacity: 0, y: 50}}
           whileInView={{opacity: 1, y: 0}}
           transition={{
             type: 'tween',
-            delay: 0.2,
-            duration: 0.4,
+            duration: 0.3,
             ease: 'easeOut',
           }}
           className='flex flex-col gap-[30px] fixed left-[20px] xl:left-[40px] 2xl:left-[70px] bottom-[40px] items-center'

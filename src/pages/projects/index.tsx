@@ -5,7 +5,6 @@ import Work from '../../components/home/Projects';
 const Projects = () => {
   return (
     <Layout pathName='/projects'>
-      <div className='pt-[87px]'></div>
       <Work />
     </Layout>
   );

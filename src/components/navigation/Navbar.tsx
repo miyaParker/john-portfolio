@@ -84,14 +84,14 @@ const Navbar = ({pathName}: {pathName: string | undefined}) => {
       <AnimatePresence>
         {isNavVisible ? (
           <motion.div
-            initial={{x: '-50%'}}
-            whileInView={{x: 0}}
+            initial={{right: -50}}
+            whileInView={{right: 0}}
             transition={{
               type: 'tween',
               duration: 0.2,
               ease: 'easeOut',
             }}
-            exit={{opacity: 0, x: '-50%'}}
+            exit={{opacity: 0, right: -50}}
             className='flex
           flex-col h-screen gap-y-[30px] w-[70%] sm:w-[50%] pt-[64px] fixed bg-blue-100 z-20'
           >

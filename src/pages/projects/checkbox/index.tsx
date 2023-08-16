@@ -83,6 +83,7 @@ const Rosita = () => {
           <motion.div
             initial={{opacity: 0, y: '10vh'}}
             whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
             transition={{
               type: 'tween',
               delay: 0.2,
@@ -154,6 +155,7 @@ const Rosita = () => {
           <motion.div
             initial={{opacity: 0, y: '10vh'}}
             whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
             transition={{
               type: 'tween',
               delay: 0.2,
@@ -195,6 +197,7 @@ const Rosita = () => {
           <motion.div
             initial={{opacity: 0, y: '10vh'}}
             whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
             transition={{
               type: 'tween',
               delay: 0.2,
@@ -217,6 +220,7 @@ const Rosita = () => {
             className='mt-[128px]'
             initial={{opacity: 0, y: '10vh'}}
             whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
             transition={{
               type: 'tween',
               delay: 0.2,
@@ -244,6 +248,7 @@ const Rosita = () => {
           <motion.div
             initial={{opacity: 0, y: '10vh'}}
             whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
             transition={{
               type: 'tween',
               delay: 0.2,
@@ -266,6 +271,7 @@ const Rosita = () => {
           <motion.div
             initial={{opacity: 0, y: '10vh'}}
             whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
             transition={{
               type: 'tween',
               delay: 0.2,
@@ -286,6 +292,7 @@ const Rosita = () => {
             <motion.img
               initial={{opacity: 0, y: '10vh'}}
               whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
               transition={{
                 type: 'tween',
                 delay: 0.2,
@@ -300,6 +307,7 @@ const Rosita = () => {
             <motion.img
               initial={{opacity: 0, y: '10vh'}}
               whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
               transition={{
                 type: 'tween',
                 delay: 0.2,
@@ -316,6 +324,7 @@ const Rosita = () => {
           <motion.div
             initial={{opacity: 0, y: '10vh'}}
             whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
             transition={{
               type: 'tween',
               delay: 0.2,
@@ -344,6 +353,7 @@ const Rosita = () => {
           <motion.div
             initial={{opacity: 0, y: '10vh'}}
             whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
             transition={{
               type: 'tween',
               delay: 0.2,
@@ -373,6 +383,7 @@ const Rosita = () => {
           <motion.div
             initial={{opacity: 0, y: '10vh'}}
             whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
             transition={{
               type: 'tween',
               delay: 0.2,
@@ -401,6 +412,7 @@ const Rosita = () => {
           <motion.div
             initial={{opacity: 0, y: '10vh'}}
             whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
             transition={{
               type: 'tween',
               delay: 0.2,
@@ -432,6 +444,7 @@ const Rosita = () => {
           <motion.div
             initial={{opacity: 0, y: '10vh'}}
             whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
             transition={{
               type: 'tween',
               delay: 0.2,
@@ -459,6 +472,7 @@ const Rosita = () => {
           <motion.div
             initial={{opacity: 0, y: '10vh'}}
             whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
             transition={{
               type: 'tween',
               delay: 0.2,
@@ -479,6 +493,7 @@ const Rosita = () => {
             <motion.img
               initial={{opacity: 0, y: '10vh'}}
               whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
               transition={{
                 type: 'tween',
                 delay: 0.2,
@@ -493,6 +508,7 @@ const Rosita = () => {
             <motion.img
               initial={{opacity: 0, y: '10vh'}}
               whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
               transition={{
                 type: 'tween',
                 delay: 0.2,
@@ -508,6 +524,7 @@ const Rosita = () => {
           <motion.div
             initial={{opacity: 0, y: '10vh'}}
             whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
             transition={{
               type: 'tween',
               delay: 0.2,
@@ -526,6 +543,7 @@ const Rosita = () => {
             <motion.img
               initial={{opacity: 0, y: '10vh'}}
               whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
               transition={{
                 type: 'tween',
                 delay: 0.2,
@@ -542,6 +560,7 @@ const Rosita = () => {
           <motion.div
             initial={{opacity: 0, y: '10vh'}}
             whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
             transition={{
               type: 'tween',
               delay: 0.2,
@@ -569,6 +588,7 @@ const Rosita = () => {
           <motion.div
             initial={{opacity: 0, y: '10vh'}}
             whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
             transition={{
               type: 'tween',
               delay: 0.2,
@@ -588,6 +608,7 @@ const Rosita = () => {
             <motion.img
               initial={{opacity: 0, y: '10vh'}}
               whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
               transition={{
                 type: 'tween',
                 delay: 0.2,
@@ -603,6 +624,7 @@ const Rosita = () => {
           <motion.div
             initial={{opacity: 0, y: '10vh'}}
             whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
             transition={{
               type: 'tween',
               delay: 0.2,
@@ -617,6 +639,7 @@ const Rosita = () => {
             <motion.img
               initial={{opacity: 0, y: '10vh'}}
               whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
               transition={{
                 type: 'tween',
                 delay: 0.2,
@@ -632,6 +655,7 @@ const Rosita = () => {
           <motion.div
             initial={{opacity: 0, y: '10vh'}}
             whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
             transition={{
               type: 'tween',
               delay: 0.2,
@@ -653,6 +677,7 @@ const Rosita = () => {
           <motion.div
             initial={{opacity: 0, y: '10vh'}}
             whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
             transition={{
               type: 'tween',
               delay: 0.2,
@@ -674,6 +699,7 @@ const Rosita = () => {
             <motion.img
               initial={{opacity: 0, y: '10vh'}}
               whileInView={{opacity: 1, y: 0}}
+              viewport={{once: true}}
               transition={{
                 type: 'tween',
                 delay: 0.2,

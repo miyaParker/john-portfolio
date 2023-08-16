@@ -54,6 +54,7 @@ const Testimonials = () => {
     <motion.div
       initial={{opacity: 0, y: '100'}}
       whileInView={{opacity: 1, y: 0}}
+      viewport={{once: true}}
       transition={{type: 'tween', delay: 0.2, duration: 0.3, ease: 'easeOut'}}
       className='w-full px-[20px] md:px-[40px] lg:px-[140px] xl:px-[120px] 2xl:px-[204px]'
     >
@@ -64,7 +65,7 @@ const Testimonials = () => {
         What People Are Saying About Me
       </h2>
       <div className='justify-center mt-[50px] w-full hidden md:flex'>
-        <div className='bg-blue-200 w-[30%] relative h-[707px] pl-[20px] lg:pl-[40px] xl:pl-[70px] rounded-l-[10px]'>
+        <div className='bg-blue-200 w-[30%] relative lg:h-[807px] xl:h-[707px] pl-[20px] lg:pl-[40px] xl:pl-[70px] rounded-l-[10px]'>
           <motion.p
             initial={{opacity: 0, x: -50}}
             whileInView={{opacity: 1, x: 0}}
@@ -93,7 +94,7 @@ const Testimonials = () => {
             </p>
           </motion.div>
         </div>
-        <div className='bg-blue-50 w-[30%] h-[707px]'>
+        <div className='bg-blue-50 w-[30%] lg:h-[807px] xl:h-[707px]'>
           <img
             src={testimonials[index].image}
             alt={testimonials[index].image}
@@ -102,7 +103,7 @@ const Testimonials = () => {
             className='h-[100%] w-full object-cover'
           />
         </div>
-        <div className='relative px-[20px] lg:px-[30px] xl:px-[56px] h-[707px] w-[40%] bg-white rounded-r-[10px]'>
+        <div className='relative px-[20px] lg:px-[30px] xl:px-[56px] lg:h-[807px] xl:h-[707px] w-[40%] bg-white rounded-r-[10px]'>
           <img
             src={Quotes}
             alt={'quotes'}
@@ -122,8 +123,8 @@ const Testimonials = () => {
         </div>
       </div>
 
-      <div className='h-max mt-[50px] w-full block bg-blue-200 max-w-[520px] mx-auto rounded-[10px] md:hidden'>
-        <div className='mx-auto flex-items-center relative px-[20px] lg:px-[30px] xl:px-[56px] h-[640px] min-[375px]:h-[550px] min-[425px]:h-[500px] min-[490px]:h-[450px] sm:h-[400px] w-full max-w-[520px]'>
+      <div className=' h-max mt-[50px] w-full block bg-blue-200 max-w-[520px] mx-auto rounded-[10px] md:hidden'>
+        <div className='mx-auto flex flex-col justify-center items-center relative px-[20px] lg:px-[30px] xl:px-[56px] h-[640px] min-[375px]:h-[550px] min-[425px]:h-[520px] min-[490px]:h-[450px]  w-full max-w-[520px]'>
           <img
             src={Quotes}
             alt={'quotes'}
@@ -136,11 +137,11 @@ const Testimonials = () => {
             whileInView={{opacity: 1, y: 0}}
             viewport={{once: true}}
             transition={{delay: 0.2, duration: 0.4}}
-            className='font-calibre font-thin pt-[72px] text-[20px] md:text-[22px] lg:text-[25px] tracking-[-2%] leading-[44px] text-white text-center relative z-20'
+            className='font-calibre font-thin text-[20px] md:text-[22px] lg:text-[25px] tracking-[-2%] leading-[44px] text-white text-center relative z-20'
           >
             {testimonials[index].quote}
           </motion.p>
-          <div className='flex justify-center items-center gap-[15px] mt-[20px]'>
+          <div className='flex justify-center items-center gap-[15px] mt-[40px]'>
             <div className='bg-blue-50 rounded-full'>
               <img
                 src={testimonials[index].imageMin}
