@@ -93,7 +93,7 @@ const Navbar = ({pathName}: {pathName: string | undefined}) => {
             }}
             exit={{opacity: 0, right: -50}}
             className='flex
-          flex-col h-screen gap-y-[30px] w-[70%] sm:w-[50%] pt-[64px] fixed bg-blue-100 z-20'
+          flex-col h-screen gap-y-[30px] w-[70%] sm:w-[50%] pt-[64px] fixed bg-blue-100 z-40'
           >
             {navLinks.map((navLink, index) => (
               <Link

@@ -24,7 +24,7 @@ const Rosita = () => {
   return (
     <Layout>
       <div className=''>
-        <motion.div className='relative w-full h-[640px] bg-white overflow-hidden relative top-[-120px] bg-fixed bg-contain bg-center bg-[url("../images/life-hero.jpg")]'>
+        <motion.div className='relative w-full  h-[640px] bg-white overflow-hidden relative top-[-120px] bg-fixed bg-contain bg-center bg-[url("../images/life-hero.jpg")]'>
           <div className='w-full h-full absolute z-10 bg-black opacity-80 top-0 bottom-0 left-0 right-0'></div>
         </motion.div>
         <div className='absolute top-[180px] lg:top-[245px] z-20 w-full  px-[20px] md:px-[40px] lg:px-[80px]'>
@@ -37,28 +37,28 @@ const Rosita = () => {
             </motion.h1>
           </div>
         </div>
-        <div className='relative top-[-120px] w-full py-[0.8rem] px-[20px] md:px-[40px] lg:px-[80px] xl:px-[200px] flex flex-wrap gap-x-[20px] justify-between bg-white text-blue-100'>
+        <div className='relative top-[-120px] w-full py-[0.8rem] px-[20px] md:px-[40px] lg:px-[80px] xl:px-[200px] flex flex-wrap gap-[20px] justify-between bg-white text-blue-100'>
           <div>
-            <p className='font-bold font-calibre text-[28px] text-center'>
+            <p className='font-bold font-calibre text-[28px] md:text-center'>
               Client
             </p>
-            <p className='font-thin font-calibre text-[23px] text-center'>
+            <p className='font-thin font-calibre text-[23px] md:text-center'>
               LifeSource
             </p>
           </div>
           <div>
-            <p className='font-bold font-calibre text-[28px] text-center'>
+            <p className='font-bold font-calibre text-[28px] md:text-center'>
               Industry
             </p>
-            <p className='font-thin font-calibre text-[23px] text-center'>
+            <p className='font-thin font-calibre text-[23px] md:text-center'>
               HealthTech
             </p>
           </div>
           <div>
-            <p className='font-bold font-calibre text-[28px] text-center'>
+            <p className='font-bold font-calibre text-[28px] md:text-center'>
               Platform
             </p>
-            <p className='font-thin font-calibre text-[23px] text-center'>
+            <p className='font-thin font-calibre text-[23px] md:text-center'>
               iOS
             </p>
           </div>
@@ -500,7 +500,7 @@ const Rosita = () => {
             }}
             className='mt-[128px]'
           >
-            <h2 className='font-calibre font-semibold w-max text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
+            <h2 className='font-calibre font-semibold lg:min-w-max text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Low-fidelity Wireframe
             </h2>
             <img
@@ -523,7 +523,7 @@ const Rosita = () => {
             }}
             className='mt-[128px]'
           >
-            <h2 className='font-calibre font-semibold w-max text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
+            <h2 className='font-calibre font-semibold lg:min-w-max text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Onboarding Screens
             </h2>
             <p className='w-full font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'>

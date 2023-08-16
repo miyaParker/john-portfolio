@@ -42,28 +42,28 @@ const Rosita = () => {
             </h1>
           </div>
         </div>
-        <div className='relative top-[-120px] w-full py-[0.8rem] px-[20px] md:px-[40px] lg:px-[80px] xl:px-[200px] flex flex-wrap gap-x-[20px] justify-between bg-white text-blue-100'>
+        <div className='relative top-[-120px] w-full py-[0.8rem] px-[20px] md:px-[40px] lg:px-[80px] xl:px-[200px] flex flex-wrap gap-[20px] justify-between bg-white text-blue-100'>
           <div>
-            <p className='font-bold font-calibre text-[28px] text-center'>
+            <p className='font-bold font-calibre text-[28px] md:text-center'>
               Client
             </p>
-            <p className='font-thin font-calibre text-[23px] text-center'>
+            <p className='font-thin font-calibre text-[23px] md:text-center'>
               Rosita Cuisine
             </p>
           </div>
           <div>
-            <p className='font-bold font-calibre text-[28px] text-center'>
+            <p className='font-bold font-calibre text-[28px] md:text-center'>
               Industry
             </p>
-            <p className='font-thin font-calibre text-[23px] text-center'>
+            <p className='font-thin font-calibre text-[23px] md:text-center'>
               Hospitality
             </p>
           </div>
           <div>
-            <p className='font-bold font-calibre text-[28px] text-center'>
+            <p className='font-bold font-calibre text-[28px] md:text-center'>
               Platform
             </p>
-            <p className='font-thin font-calibre text-[23px] text-center'>
+            <p className='font-thin font-calibre text-[23px] md:text-center'>
               iOS & Android
             </p>
           </div>
@@ -627,7 +627,7 @@ const Rosita = () => {
           </motion.div>
 
           <div className='mt-[128px] flex flex-col lg:flex-row gap-[18px] justify-between'>
-            <h2 className='self-start top-10 sticky z-10 font-calibre font-semibold w-max text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
+            <h2 className='self-start top-10 lg:sticky z-10 font-calibre font-semibold lg:min-w-max text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Designing the Solution
             </h2>
             <div className='font-calibre'>
@@ -648,7 +648,7 @@ const Rosita = () => {
             </div>
           </div>
           <div className='mt-[128px] flex flex-col lg:flex-row gap-[18px] justify-between'>
-            <h2 className='self-start top-10 sticky z-10 font-calibre font-semibold w-max text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
+            <h2 className='self-start top-10 lg:sticky z-10 font-calibre font-semibold lg:min-w-max text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Final Solution
             </h2>
             <p className='max-w-[750px] font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'>
@@ -975,7 +975,7 @@ const Rosita = () => {
             }}
             className='mt-[128px] flex flex-col lg:flex-row gap-[18px] justify-between'
           >
-            <h2 className='self-start top-10 sticky z-10 font-calibre font-semibold w-max text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
+            <h2 className='self-start top-10 lg:sticky z-10 font-calibre font-semibold lg:min-w-max text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
               Major Takeaways
             </h2>
             <motion.div
