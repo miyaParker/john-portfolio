@@ -39,20 +39,25 @@ const Blog = () => {
               reach out to senior colleagues to have a look or give feedback on
               our design process or the project itself.
             </p>
-            <div className='flex mb-[14px] items-center'>
-              <p className='font-mono font-medium text-[14px] xl:text-[15px] leading-[28px] text-lemon mr-2'>
-                Read More
-              </p>
-              <div className='w-[15px] h-[15px] overflow-clip'>
-                <img
-                  src={Arrow}
-                  alt='view more about Rosita African Cuisine case study'
-                  width={16}
-                  height={16}
-                  className='w-full h-full object-cover'
-                />
+            <a
+              target='_blank'
+              href='https://bootcamp.uxdesign.cc/the-risks-of-seeking-too-much-feedback-on-your-design-projects-ab838d0b4b94'
+            >
+              <div className='flex mb-[14px] items-center'>
+                <p className='font-mono font-medium text-[14px] xl:text-[15px] leading-[28px] text-lemon mr-2'>
+                  Read More
+                </p>
+                <div className='w-[15px] h-[15px] overflow-clip'>
+                  <img
+                    src={Arrow}
+                    alt='view more about Rosita African Cuisine case study'
+                    width={16}
+                    height={16}
+                    className='w-full h-full object-cover'
+                  />
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
         <div className='w-full md:max-w-[389px] flex flex-col'>
@@ -74,20 +79,25 @@ const Blog = () => {
               reach out to senior colleagues to have a look or give feedback on
               our design process or the project itself.
             </p>
-            <div className='flex mb-[14px] items-center'>
-              <p className='font-mono font-medium text-[14px] xl:text-[15px] leading-[28px] text-lemon mr-2'>
-                Read More
-              </p>
-              <div className='w-[15px] h-[15px] overflow-clip'>
-                <img
-                  src={Arrow}
-                  alt='view more about Rosita African Cuisine case study'
-                  width={16}
-                  height={16}
-                  className='w-full h-full object-cover'
-                />
+            <a
+              target='_blank'
+              href='https://bootcamp.uxdesign.cc/psychology-in-design-cf9883c2c4f8'
+            >
+              <div className='flex mb-[14px] items-center'>
+                <p className='font-mono font-medium text-[14px] xl:text-[15px] leading-[28px] text-lemon mr-2'>
+                  Read More
+                </p>
+                <div className='w-[15px] h-[15px] overflow-clip'>
+                  <img
+                    src={Arrow}
+                    alt='view more about Rosita African Cuisine case study'
+                    width={16}
+                    height={16}
+                    className='w-full h-full object-cover'
+                  />
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
         <div className='flex flex-col'>
@@ -108,31 +118,37 @@ const Blog = () => {
               The proof of the pudding…’ as the famous maxim goes, ‘…is in the
               eating…’ and I beg to add ‘not in the cooking nor the dishing.’
               The same should go for the designs we create, but often, that is
-              ...
             </p>
-            <div className='flex mb-[14px] items-center'>
-              <p className='font-mono font-medium text-[14px] xl:text-[15px] leading-[28px] text-lemon mr-2'>
-                Read More
-              </p>
-              <div className='w-[15px] h-[15px] overflow-clip'>
-                <img
-                  src={Arrow}
-                  alt='view more about Rosita African Cuisine case study'
-                  width={16}
-                  height={16}
-                  className='w-full h-full object-cover'
-                />
+            <a
+              target='_blank'
+              href='https://bootcamp.uxdesign.cc/how-to-measure-success-as-a-designer-8dc1d12249f8'
+            >
+              <div className='flex mb-[14px] items-center'>
+                <p className='font-mono font-medium text-[14px] xl:text-[15px] leading-[28px] text-lemon mr-2'>
+                  Read More
+                </p>
+                <div className='w-[15px] h-[15px] overflow-clip'>
+                  <img
+                    src={Arrow}
+                    alt='view more about Rosita African Cuisine case study'
+                    width={16}
+                    height={16}
+                    className='w-full h-full object-cover'
+                  />
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
-      <button className='block mx-auto mt-[128px] flex items-center gap-[8px] border border-1 rounded-[5px] border-lemon px-[42px] py-[16px] md:px-[52px] md:py-[18px] lg:px-[62px] lg:py-[20px]'>
-        <span className='underline leading-[120%] font-mono uppercase text-lemon font-medium text-[12px] md:text-[14px] lg:text-[16px]'>
-          view more
-        </span>
-        <img src={Arrow} alt='talk to John Ayorinde' width={16} height={12} />
-      </button>
+      <a target='_blank' href='https://mztatobey.medium.com/'>
+        <button className='block mx-auto mt-[128px] flex items-center gap-[8px] border border-1 rounded-[5px] border-lemon px-[42px] py-[16px] md:px-[52px] md:py-[18px] lg:px-[62px] lg:py-[20px]'>
+          <span className='underline leading-[120%] font-mono uppercase text-lemon font-medium text-[12px] md:text-[14px] lg:text-[16px]'>
+            view more
+          </span>
+          <img src={Arrow} alt='talk to John Ayorinde' width={16} height={12} />
+        </button>
+      </a>
     </motion.div>
   );
 };

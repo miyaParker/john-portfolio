@@ -30,12 +30,15 @@ const Hero = () => {
         developing impactful digital products and experiences for both startups
         and large-scale established organizations.
       </p>
-      <button className='flex items-center gap-[8px] border border-1 rounded-[5px] border-lemon px-[42px] py-[16px] md:px-[52px] md:py-[18px] lg:px-[62px] lg:py-[20px]'>
-        <span className='font-mono uppercase text-lemon font-medium text-[12px] md:text-[14px] lg:text-[16px]'>
-          let's talk
-        </span>
-        <img src={Arrow} alt='talk to John Ayorinde' width={24} height={24} />
-      </button>
+
+      <a href='mailto:johnolarinde@gmail.com'>
+        <button className='flex items-center gap-[8px] border border-1 rounded-[5px] border-lemon px-[42px] py-[16px] md:px-[52px] md:py-[18px] lg:px-[62px] lg:py-[20px]'>
+          <span className='font-mono uppercase text-lemon font-medium text-[12px] md:text-[14px] lg:text-[16px]'>
+            let's talk
+          </span>
+          <img src={Arrow} alt='talk to John Ayorinde' width={24} height={24} />
+        </button>
+      </a>
     </motion.main>
   );
 };

@@ -26,10 +26,11 @@ import Pod4 from '../../images/pod4.svg';
 import Pod5 from '../../images/pod5.svg';
 
 import Music1 from '../../images/music1.svg';
-import Music2 from '../../images/music2.svg';
-import Music3 from '../../images/music3.svg';
-import Music4 from '../../images/music4.svg';
+import Music2 from '../../images/music2.jpeg';
+import Music3 from '../../images/music3.jpeg';
+import Music4 from '../../images/music4.jpeg';
 import Music5 from '../../images/music5.svg';
+import Arrow from '../../images/arrow-right.png';
 
 const About = () => {
   return (
@@ -377,35 +378,90 @@ const About = () => {
             <div className='mt-[30px] sm:mt-[35px] md:mt-[40px] lg:mt-[50px] border border-white border-1 w-[35px]'></div>
           </div>
           <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-[32px] mt-[70px]'>
-            <div className='w-full h-[336px] rounded-[10px] '>
+            <div className='w-full h-[420px] rounded-[10px] '>
               <img
                 src={Music1}
-                className='object-cover w-full h-full max-h-full rounded-[10px]'
+                className='object-cover w-full h-[336px] max-h-full rounded-[10px]'
               />
+              <a
+                target='_blank'
+                href='https://open.spotify.com/playlist/6be0keisznbaU6WKkdvW2c?si=b316bb5e154841db&nd=1'
+              >
+                <div className='flex mt-[20px] md:mt-[30px] lg:mt-[40px] gap-[8px]'>
+                  <p className='underline text-lemon text-[13px] md:text-[14px] lg:text-[15px] font-mono font-medium'>
+                    Play on Spotify
+                  </p>
+                  <img src={Arrow} width={24} height={24} />
+                </div>
+              </a>
             </div>
-            <div className='w-full h-[336px] rounded-[10px]'>
+            <div className='w-full h-[420px] rounded-[10px]'>
               <img
                 src={Music2}
-                className='object-cover w-full h-full max-h-full rounded-[10px]'
+                className='object-cover w-full h-[336px] max-h-full rounded-[10px]'
               />
+              <a
+                target='_blank'
+                href='https://open.spotify.com/playlist/6be0keisznbaU6WKkdvW2c?si=b316bb5e154841db&nd=1'
+              >
+                <div className='flex mt-[20px] md:mt-[30px] lg:mt-[40px] gap-[8px]'>
+                  <p className='underline text-lemon text-[13px] md:text-[14px] lg:text-[15px] font-mono font-medium'>
+                    Play on Spotify
+                  </p>
+                  <img src={Arrow} width={24} height={24} />
+                </div>
+              </a>
             </div>
-            <div className='w-full h-[336px] rounded-[10px]'>
+            <div className='w-full h-[420px] rounded-[10px]'>
               <img
                 src={Music3}
-                className='object-cover w-full h-full rounded-[10px] max-h-full'
+                className='object-cover w-full h-[336px] rounded-[10px] max-h-full'
               />
+              <a
+                target='_blank'
+                href='https://open.spotify.com/playlist/0fwYgTrDHYuRpyWKVN9ptp?si=dded9d88c5af4635&nd=1'
+              >
+                <div className='flex mt-[20px] md:mt-[30px] lg:mt-[40px] gap-[8px]'>
+                  <p className='underline text-lemon text-[13px] md:text-[14px] lg:text-[15px] font-mono font-medium'>
+                    Play on Spotify
+                  </p>
+                  <img src={Arrow} width={24} height={24} />
+                </div>
+              </a>
             </div>
-            <div className='w-full h-[336px] rounded-[10px]'>
+            <div className='w-full h-[420px] rounded-[10px]'>
               <img
                 src={Music4}
-                className='object-cover w-full h-full max-h-full rounded-[10px]'
+                className='object-cover w-full h-[336px] max-h-full rounded-[10px]'
               />
+              <a
+                target='_blank'
+                href='https://open.spotify.com/playlist/37i9dQZF1DWWxPM4nWdhyI?si=3c74330a1d434585&nd=1'
+              >
+                <div className='flex mt-[20px] md:mt-[30px] lg:mt-[40px] gap-[8px]'>
+                  <p className='underline text-lemon text-[13px] md:text-[14px] lg:text-[15px] font-mono font-medium'>
+                    Play on Spotify
+                  </p>
+                  <img src={Arrow} width={24} height={24} />
+                </div>
+              </a>
             </div>
-            <div className='w-full h-[336px] rounded-[10px]'>
+            <div className='w-full h-[420px] rounded-[10px]'>
               <img
                 src={Music5}
-                className='object-cover w-full h-full max-h-full rounded-[10px]'
+                className='object-cover w-full h-[336px] max-h-full rounded-[10px]'
               />
+              <a
+                target='_blank'
+                href='https://open.spotify.com/playlist/6be0keisznbaU6WKkdvW2c?si=b316bb5e154841db&nd=1'
+              >
+                <div className='flex mt-[20px] md:mt-[30px] lg:mt-[40px] gap-[8px]'>
+                  <p className='underline text-lemon text-[13px] md:text-[14px] lg:text-[15px] font-mono font-medium'>
+                    Play on Spotify
+                  </p>
+                  <img src={Arrow} width={24} height={24} />
+                </div>
+              </a>
             </div>
           </div>
         </motion.div>

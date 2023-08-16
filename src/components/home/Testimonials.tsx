@@ -123,7 +123,7 @@ const Testimonials = () => {
         </div>
       </div>
 
-      <div className=' h-max mt-[50px] w-full block bg-blue-200 max-w-[520px] mx-auto rounded-[10px] md:hidden'>
+      <div className='h-max mt-[50px] w-full block bg-blue-200 max-w-[520px] mx-auto rounded-[10px] md:hidden'>
         <div className='mx-auto flex flex-col justify-center items-center relative px-[20px] lg:px-[30px] xl:px-[56px] h-[640px] min-[375px]:h-[550px] min-[425px]:h-[520px] min-[490px]:h-[450px]  w-full max-w-[520px]'>
           <img
             src={Quotes}

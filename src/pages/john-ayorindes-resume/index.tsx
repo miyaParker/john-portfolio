@@ -197,6 +197,11 @@ const Resume = () => {
         <motion.div
           initial={{opacity: 0, scale: 0.5}}
           animate={{opacity: 1, scale: 1}}
+          whileHover={{
+            scale: 1.3,
+            transition: {duration: 0.3},
+          }}
+          whileTap={{scale: 0.8, transition: {duration: 0.2}}}
           transition={{
             type: 'spring',
             stiffness: 200,
@@ -204,13 +209,13 @@ const Resume = () => {
             duration: 0.4,
             ease: 'easeOut',
           }}
-          className='fixed right-[20px] xl:right-[40px] bottom-[40px] items-center'
+          className='download fixed right-[20px] xl:right-[40px] bottom-[40px] items-center'
         >
           <div
             onClick={handleDownload}
             className='cursor-pointer bg-lemon w-[60px] h-[60px] flex items-center justify-center rounded-full'
           >
-            <img src={Download} width={24} height={24} />
+            <img src={Download} width={18} height={18} className='' />
           </div>
         </motion.div>
       </div>
