@@ -79,7 +79,7 @@ const Projects = () => {
             Rosita African Cuisine is a chain of restaurants with the vision of
             delivering the best African dishes to everyone across Africa.
           </p>
-          <Link to='/projects/rosita-case-study'>
+          <Link to='/projects/rosita'>
             <button className='block mt-[17px] flex items-center gap-[8px] border border-1 rounded-[5px] border-lemon px-[42px] py-[16px] md:px-[52px] md:py-[18px] lg:px-[62px] lg:py-[20px]'>
               <p className='font-mono font-medium uppercase text-[14px] md:text-[16px] leading-[150%] text-lemon mr-2'>
                 View Case Study
@@ -155,7 +155,7 @@ const Projects = () => {
             LifeSource is a blood donation app that connects potential donors to
             patients in need of blood.
           </p>
-          <Link to='/projects/life-source'>
+          <Link to='/projects/lifesource'>
             <button className='block mt-[17px] flex items-center gap-[8px] border border-1 rounded-[5px] border-lemon px-[42px] py-[16px] md:px-[52px] md:py-[18px] lg:px-[62px] lg:py-[20px]'>
               <p className='font-mono font-medium uppercase text-[14px] md:text-[16px] leading-[150%] text-lemon mr-2'>
                 View Case Study

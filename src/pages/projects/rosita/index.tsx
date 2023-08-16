@@ -282,7 +282,13 @@ const Rosita = () => {
                   questions as I tried to define the problem space and who to
                   design for. I first narrowed my user group to Nigerians
                   between the ages of 16 - 64, as this age range has the highest
-                  internet adoption rate (source).
+                  internet adoption rate{' '}
+                  <a
+                    target='_blank'
+                    href='https://www.connectingafrica.com/author.asp?section_id=761&doc_id=767400'
+                  >
+                    <span className='text-lemon font-medium'>(source).</span>
+                  </a>
                 </p>
               </div>
               <div>
@@ -543,7 +549,12 @@ const Rosita = () => {
               </p>
               <p className='font-calibre font-bold leading-[150%] mt-[13px] text-lemon text-[22px] md:text-[24px] lg:text-[28px]'>
                 The Comprehensive Audit is available{' '}
-                <span className='underline'>HERE</span>
+                <a
+                  target='_blank'
+                  href='https://docs.google.com/spreadsheets/d/1hoBMrSeff4lK8S5dlMQGgjJDfby2pun8KczTKQiNrso/edit#gid=543487785'
+                >
+                  <span className='underline'>HERE</span>
+                </a>
               </p>
             </motion.div>
 
@@ -626,7 +637,13 @@ const Rosita = () => {
               </p>
 
               <p className='font-calibre font-bold leading-[150%] mt-[13px] text-lemon text-[22px] md:text-[24px] lg:text-[28px]'>
-                The Sitemap is available <span className='underline'>HERE</span>
+                The Sitemap is available{' '}
+                <a
+                  target='_blank'
+                  href='https://drive.google.com/file/d/196hEQRxZ2yab8HEZ9j1QlCwaQPWvRp18/view'
+                >
+                  <span className='underline'>HERE</span>
+                </a>
               </p>
             </motion.div>
 
@@ -841,11 +858,16 @@ const Rosita = () => {
                 height={367}
                 className='w-full max-w-[1024px] mt-[40px] mx-auto'
               />
-              <p className='font-calibre text-center font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'>
+              <p className='font-calibre text-center font-thin leading-[150%] mt-[40px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'>
                 Would you like to see all the screens in a prototype? —{' '}
-                <span className='underline text-lemon font-normal '>
-                  Here is the final prototype.
-                </span>
+                <a
+                  target='_blank'
+                  href='https://www.figma.com/proto/IfeMUCKzvMbCZYIqnvkz4M/Rosita-African-Cuisine?node-id=1-2321&scaling=contain&page-id=0%3A1&starting-point-node-id=1%3A154'
+                >
+                  <span className='underline text-lemon font-normal '>
+                    Here is the final prototype.
+                  </span>
+                </a>
               </p>
             </motion.div>
 
@@ -964,8 +986,13 @@ const Rosita = () => {
               }}
               className='font-calibre leading-[150%] mt-[13px] text-lemon font-bold text-[22px] md:text-[24px] lg:text-[28px]'
             >
-              See the Rosita Cuisine Usability Test Plan{' '}
-              <span className='underline'>HERE</span>
+              See the Rosita Cuisine Usability Test Report{' '}
+              <a
+                target='_blank'
+                href='https://docs.google.com/document/d/1QnhNOg8FX5ndAK8gbBe4sMedVeaRId8wpib7-1XS6lA/edit'
+              >
+                <span className='underline'>HERE</span>
+              </a>
             </motion.p>
             <motion.div
               initial={{opacity: 0, y: 100}}

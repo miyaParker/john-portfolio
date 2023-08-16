@@ -193,7 +193,13 @@ const Rosita = () => {
                 myself these questions as I tried to define the problem space
                 and who to design for. I first narrowed my user group to
                 Nigerians between the ages of 16 - 64, as this age range has the
-                highest internet adoption rate (source).
+                highest internet adoption rate{' '}
+                <a
+                  target='_blank'
+                  href='https://www.connectingafrica.com/author.asp?section_id=761&doc_id=767400'
+                >
+                  <span className='text-lemon font-medium'>(source).</span>
+                </a>
               </p>
             </motion.div>
 
@@ -316,7 +322,12 @@ const Rosita = () => {
                 <span className='font-bold'>CELTRAS</span>), Faculty of Social
                 Sciences, School of Graduate Studies, University of Port
                 Harcourt, Nigeria which is available{' '}
-                <span className='underline font-bold text-lemon'>HERE</span>
+                <a
+                  href='https://uijrt.com/articles/v3/i6/UIJRTV3I60011.pdf'
+                  target='_blank'
+                >
+                  <span className='underline font-bold text-lemon'>HERE</span>
+                </a>
               </motion.p>
             </motion.div>
 
@@ -630,7 +641,9 @@ const Rosita = () => {
                 Icons relevant to Easy Commute were carefully sourced from
                 Untitled Icons libraries, and Illustrations used across the
                 entire product were sourced{' '}
-                <span className='text-lemon font-bold underline'>HERE</span>.
+                <a href='https://storyset.com/' target='_blank'>
+                  <span className='text-lemon font-bold underline'>HERE</span>.
+                </a>
               </p>
               <img
                 src={Icons}
@@ -853,7 +866,12 @@ const Rosita = () => {
                 className='font-calibre font-thin leading-[150%] mt-[40px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'
               >
                 You can view the full design screens{' '}
-                <span className='underline font-bold text-lemon'>HERE</span>
+                <a
+                  href='https://drive.google.com/drive/folders/11viXUB3TkIpDlwsIIAdXs8K_ECPCMR33'
+                  target='_blank'
+                >
+                  <span className='underline font-bold text-lemon'>HERE</span>
+                </a>
               </motion.p>
             </motion.div>
             <motion.div
@@ -884,7 +902,12 @@ const Rosita = () => {
               </p>
               <p className='font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'>
                 You can take a look at the detailed GTM Strategy{' '}
-                <span className='underline font-bold text-lemon'>HERE</span>
+                <a
+                  href='https://drive.google.com/file/d/1HKmnqPpTfTOpOoLGxBjZ49XFGoQ3hHnj/view'
+                  target='_blank'
+                >
+                  <span className='underline font-bold text-lemon'>HERE</span>
+                </a>
               </p>
             </motion.div>
 

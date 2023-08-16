@@ -13,23 +13,6 @@ import Food3 from '../../images/food3.svg';
 import Food4 from '../../images/food4.svg';
 
 import Book from '../../images/book.svg';
-import Book1 from '../../images/book1.svg';
-import Book2 from '../../images/book2.svg';
-import Book3 from '../../images/book3.svg';
-import Book4 from '../../images/book4.svg';
-import Book5 from '../../images/book5.png';
-
-import Pod1 from '../../images/pod1.svg';
-import Pod2 from '../../images/pod2.svg';
-import Pod3 from '../../images/pod3.svg';
-import Pod4 from '../../images/pod4.svg';
-import Pod5 from '../../images/pod5.svg';
-
-import Music1 from '../../images/music1.svg';
-import Music2 from '../../images/music2.jpeg';
-import Music3 from '../../images/music3.jpeg';
-import Music4 from '../../images/music4.jpeg';
-import Music5 from '../../images/music5.svg';
 import Arrow from '../../images/arrow-right.png';
 
 const About = () => {
@@ -329,10 +312,10 @@ const About = () => {
           </div>
           <div className='w-full flex flex-wrap flex-row mt-[70px] gap-x-[1.5%] md:gap-x-[1.5%] gap-y-[50px]'>
             <div className='w-full sm:w-[30%] md:w-[18%] rounded-[10px]'>
-              <div className='h-[320px] rounded-[10px] bg-[url("../images/music1.svg")] bg-cover bg-center'></div>
+              <div className='h-[320px] rounded-[10px] bg-[url("../images/music1.jpeg")] bg-cover bg-center'></div>
               <a
                 target='_blank'
-                href='https://open.spotify.com/playlist/6be0keisznbaU6WKkdvW2c?si=b316bb5e154841db&nd=1'
+                href='https://open.spotify.com/playlist/08FF1W5WIXNrtJ1SKdhT1h?si=acc16f8d06474d1e'
               >
                 <div className='w-max flex mt-[30px] lg:mt-[40px] gap-[8px]'>
                   <p className='underline text-lemon text-[13px] md:text-[14px] lg:text-[15px] font-mono font-medium'>
@@ -385,10 +368,10 @@ const About = () => {
               </a>
             </div>
             <div className='w-full sm:w-[30%] md:w-[18%] rounded-[10px]'>
-              <div className='h-[320px] rounded-[10px] bg-[url("../images/music5.svg")] bg-cover bg-center'></div>
+              <div className='h-[320px] rounded-[10px] bg-[url("../images/music5.jpeg")] bg-cover bg-center'></div>
               <a
                 target='_blank'
-                href='https://open.spotify.com/playlist/6be0keisznbaU6WKkdvW2c?si=b316bb5e154841db&nd=1'
+                href='https://open.spotify.com/playlist/0SAWp4yNyF5bA4VLmWAHUc?si=4b9bd62ec75f445b'
               >
                 <div className='w-max flex mt-[30px] lg:mt-[40px] gap-[8px]'>
                   <p className='underline text-lemon text-[13px] md:text-[14px] lg:text-[15px] font-mono font-medium'>

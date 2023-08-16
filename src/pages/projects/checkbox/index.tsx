@@ -632,6 +632,15 @@ const Rosita = () => {
                 className='w-full max-w-[936px] mt-[40px] mx-auto'
               />
             </motion.div>
+            <p className='font-calibre font-thin leading-[150%] mt-[40px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'>
+              Check out other designs{' '}
+              <a
+                href='https://drive.google.com/drive/folders/1jDr1ZDeIaQomk7joXo3QfkCEKtCaei6d?usp=drive_link'
+                target='_blank'
+              >
+                <span className='underline font-bold text-lemon'>HERE</span>
+              </a>
+            </p>
             <motion.div
               initial={{opacity: 0, y: '10vh'}}
               whileInView={{opacity: 1, y: 0}}

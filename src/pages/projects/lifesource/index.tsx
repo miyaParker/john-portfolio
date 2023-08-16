@@ -329,7 +329,13 @@ const Rosita = () => {
                 className='font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'
               >
                 After performing user interviews with 18 people, we discovered
-                the key problem areas. This can be seen HERE
+                the key problem areas. This can be seen{' '}
+                <a
+                  target='_blank'
+                  href='https://drive.google.com/drive/folders/1Yx5QdaoY5244G4gCrWtSpALoowPJYiZm?usp=sharing'
+                >
+                  <span className='text-lemon font-medium underline'>HERE</span>
+                </a>
               </motion.p>
             </div>
             <div className='mt-[60px] md:mt-[80px] mt-[128px]'>
