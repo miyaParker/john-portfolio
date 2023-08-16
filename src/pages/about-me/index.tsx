@@ -317,9 +317,22 @@ const About = () => {
                 target='_blank'
                 href='https://open.spotify.com/playlist/08FF1W5WIXNrtJ1SKdhT1h?si=acc16f8d06474d1e'
               >
-                <div className='z-20 flex items-center justify-center absolute bottom-[20px] right-4 bg-[#1ED760] opacity-60  rounded-full w-[40px] h-[40px]'>
+                <motion.div
+                  whileHover={{
+                    scale: 1.3,
+                    opacity: 1,
+                    transition: {duration: 0.4},
+                  }}
+                  transition={{
+                    type: 'spring',
+                    stiffness: 200,
+                    delay: 0.2,
+                    ease: 'easeOut',
+                  }}
+                  className='z-20 flex items-center justify-center absolute bottom-[20px] right-4 bg-[#1ED760] opacity-60  rounded-full w-[40px] h-[40px]'
+                >
                   <img src={Play} width={18} height={18} />
-                </div>
+                </motion.div>
               </a>
               <div className='rounded-l-[10px] rounded-r-[10px] z-10 w-full bg-gradient-to-t from-blue-200 h-[160px] absolute bottom-0'></div>
             </div>
@@ -330,9 +343,22 @@ const About = () => {
                 target='_blank'
                 href='https://open.spotify.com/playlist/6be0keisznbaU6WKkdvW2c?si=b316bb5e154841db&nd=1'
               >
-                <div className='z-20 flex items-center justify-center absolute bottom-[20px] right-4 bg-[#1ED760] opacity-60  rounded-full w-[40px] h-[40px]'>
+                <motion.div
+                  whileHover={{
+                    scale: 1.3,
+                    opacity: 1,
+                    transition: {duration: 0.4},
+                  }}
+                  transition={{
+                    type: 'spring',
+                    stiffness: 200,
+                    delay: 0.2,
+                    ease: 'easeOut',
+                  }}
+                  className='z-20 flex items-center justify-center absolute bottom-[20px] right-4 bg-[#1ED760] opacity-60  rounded-full w-[40px] h-[40px]'
+                >
                   <img src={Play} width={18} height={18} />
-                </div>
+                </motion.div>
               </a>
               <div className='rounded-l-[10px] rounded-r-[10px] z-10 w-full bg-gradient-to-t from-blue-200 h-[160px] absolute bottom-0'></div>
             </div>
@@ -343,9 +369,22 @@ const About = () => {
                 target='_blank'
                 href='https://open.spotify.com/playlist/0fwYgTrDHYuRpyWKVN9ptp?si=dded9d88c5af4635&nd=1'
               >
-                <div className='z-20 flex items-center justify-center absolute bottom-[20px] right-4 bg-[#1ED760] opacity-60  rounded-full w-[40px] h-[40px]'>
+                <motion.div
+                  whileHover={{
+                    scale: 1.3,
+                    opacity: 1,
+                    transition: {duration: 0.4},
+                  }}
+                  transition={{
+                    type: 'spring',
+                    stiffness: 200,
+                    delay: 0.2,
+                    ease: 'easeOut',
+                  }}
+                  className='z-20 flex items-center justify-center absolute bottom-[20px] right-4 bg-[#1ED760] opacity-60  rounded-full w-[40px] h-[40px]'
+                >
                   <img src={Play} width={18} height={18} />
-                </div>
+                </motion.div>
               </a>
               <div className='rounded-l-[10px] rounded-r-[10px] z-10 w-full bg-gradient-to-t from-blue-200 h-[160px] absolute bottom-0'></div>
             </div>
@@ -355,9 +394,22 @@ const About = () => {
                 target='_blank'
                 href='https://open.spotify.com/playlist/37i9dQZF1DWWxPM4nWdhyI?si=3c74330a1d434585&nd=1'
               >
-                <div className='z-20 flex items-center justify-center absolute bottom-[20px] right-4 bg-[#1ED760] opacity-60  rounded-full w-[40px] h-[40px]'>
+                <motion.div
+                  whileHover={{
+                    scale: 1.3,
+                    opacity: 1,
+                    transition: {duration: 0.4},
+                  }}
+                  transition={{
+                    type: 'spring',
+                    stiffness: 200,
+                    delay: 0.2,
+                    ease: 'easeOut',
+                  }}
+                  className='z-20 flex items-center justify-center absolute bottom-[20px] right-4 bg-[#1ED760] opacity-60  rounded-full w-[40px] h-[40px]'
+                >
                   <img src={Play} width={18} height={18} />
-                </div>
+                </motion.div>
               </a>
               <div className='rounded-l-[10px] rounded-r-[10px] z-10 w-full bg-gradient-to-t from-blue-200 h-[160px] absolute bottom-0'></div>
             </div>
@@ -367,9 +419,22 @@ const About = () => {
                 target='_blank'
                 href='https://open.spotify.com/playlist/0SAWp4yNyF5bA4VLmWAHUc?si=4b9bd62ec75f445b'
               >
-                <div className='z-20 flex items-center justify-center absolute bottom-[20px] right-4 bg-[#1ED760] opacity-60  rounded-full w-[40px] h-[40px]'>
+                <motion.div
+                  whileHover={{
+                    scale: 1.3,
+                    opacity: 1,
+                    transition: {duration: 0.4},
+                  }}
+                  transition={{
+                    type: 'spring',
+                    stiffness: 200,
+                    delay: 0.2,
+                    ease: 'easeOut',
+                  }}
+                  className='z-20 flex items-center justify-center absolute bottom-[20px] right-4 bg-[#1ED760] opacity-60  rounded-full w-[40px] h-[40px]'
+                >
                   <img src={Play} width={18} height={18} />
-                </div>
+                </motion.div>
                 <div className='rounded-l-[10px] rounded-r-[10px] z-10 w-full bg-gradient-to-t from-blue-200 h-[160px] absolute bottom-0'></div>
               </a>
             </div>
