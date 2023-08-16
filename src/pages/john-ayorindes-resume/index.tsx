@@ -30,7 +30,7 @@ const Resume = () => {
   };
   return (
     <Layout pathName='/john-ayorindes-resume'>
-      <div className='pt-[120px] md:pt-[200px] lg:pt-[300px] font-thin px-[20px] md:px-[40px] lg:px-[80px] xl:px-[120px] 2xl:px-[204px]'>
+      <div className='pt-[120px] md:pt-[200px] lg:pt-[250px] font-thin px-[20px] md:px-[40px] lg:px-[80px] xl:px-[120px] 2xl:px-[204px]'>
         <motion.div
           initial={{opacity: 0, y: '10vh'}}
           whileInView={{opacity: 1, y: 0}}
@@ -188,10 +188,22 @@ const Resume = () => {
           }}
           className='hidden lg:flex flex-col gap-[30px] fixed left-[20px] xl:left-[40px] 2xl:left-[70px] bottom-[40px] items-center'
         >
-          <img src={Instagram} width={24} height={24} />
-          <img src={LinkedIn} width={24} height={24} />
-          <img src={Twitter} width={24} height={24} />
-          <img src={Dribbble} width={24} height={24} />
+          <a
+            target='_blank'
+            href='https://instagram.com/mztatobey?igshid=OGQ5ZDc2ODk2ZA=='
+          >
+            <img src={Instagram} width={24} height={24} />
+          </a>
+          <a target='_blank' href='https://www.linkedin.com/in/olarinde-john/'>
+            <img src={LinkedIn} width={24} height={24} />
+          </a>
+          <a target='_blank' href='https://twitter.com/mztatobey'>
+            <img src={Twitter} width={24} height={24} />
+          </a>
+          <a target='_blank' href='https://dribbble.com/Mztatobey'>
+            <img src={Dribbble} width={24} height={24} />
+          </a>
+
           <div className='h-[204px] w-[2px] bg-white'></div>
         </motion.div>
         <motion.div

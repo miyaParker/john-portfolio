@@ -25,7 +25,7 @@ const IndexPage: React.FC<PageProps> = () => {
             duration: 0.3,
             ease: 'easeOut',
           }}
-          className='flex flex-col gap-[30px] fixed left-[20px] xl:left-[40px] 2xl:left-[70px] bottom-[40px] items-center'
+          className='flex flex-col gap-[30px] fixed left-[40px] 2xl:left-[70px] bottom-[40px] items-center'
         >
           <img src={Instagram} width={24} height={24} />
           <img src={LinkedIn} width={24} height={24} />

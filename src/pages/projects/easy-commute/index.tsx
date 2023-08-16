@@ -2,7 +2,7 @@ import React from 'react';
 import {motion} from 'framer-motion';
 import {ProjectLayout, ProjectBodyLayout} from '../../../components/Layout';
 import Outcome from '../../../images/outcome.png';
-import Research from '../../../images/desk-research.png';
+import Research from '../../../images/desk-research-2.png';
 import Research2 from '../../../images/desk-research-2b.png';
 import Interview from '../../../images/user-interview.png';
 import Map1 from '../../../images/map1.jpg';
@@ -307,7 +307,7 @@ const Rosita = () => {
                   duration: 0.6,
                   ease: 'easeOut',
                 }}
-                className='font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'
+                className='font-calibre font-thin leading-[150%] mt-[40px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'
               >
                 To further buttress and solidify the response gotten from this
                 desk research, I did deeper research and got a paper published
@@ -850,7 +850,7 @@ const Rosita = () => {
                   duration: 0.6,
                   ease: 'easeOut',
                 }}
-                className='font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'
+                className='font-calibre font-thin leading-[150%] mt-[40px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'
               >
                 You can view the full design screens{' '}
                 <span className='underline font-bold text-lemon'>HERE</span>
@@ -980,7 +980,7 @@ const Rosita = () => {
                   }}
                   className='font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'
                 >
-                  2.{' '}
+                  3.{' '}
                   <span className='font-bold text-white'>Gender-neutral: </span>{' '}
                   Blue is a color that is generally considered to be
                   gender-neutral, which can be important for a train booking app
@@ -998,7 +998,7 @@ const Rosita = () => {
                   }}
                   className='font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'
                 >
-                  2.{' '}
+                  4.{' '}
                   <span className='font-bold text-white'>
                     {' '}
                     Association with travel:{' '}

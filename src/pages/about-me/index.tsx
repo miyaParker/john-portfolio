@@ -35,7 +35,7 @@ import Arrow from '../../images/arrow-right.png';
 const About = () => {
   return (
     <Layout pathName='/about-me'>
-      <div className='pt-[120px] md:pt-[200px] lg:pt-[300px] font-thin px-[20px] md:px-[40px] lg:px-[80px] xl:px-[120px] 2xl:px-[204px]'>
+      <div className='pt-[120px] md:pt-[200px] lg:pt-[250px] font-thin px-[20px] md:px-[40px] lg:px-[80px] xl:px-[120px] 2xl:px-[204px]'>
         <motion.div
           initial={{opacity: 0, y: '10vh'}}
           whileInView={{opacity: 1, y: 0}}
@@ -72,7 +72,7 @@ const About = () => {
             </p>
           </div>
         </motion.div>
-        <motion.div className='mt-[60px] md:[120px] lg:mt-[187px]'>
+        <motion.div className='mt-[60px] md:[120px] lg:mt-[127px]'>
           <div className='flex flex-col lg:flex-row lg:gap-x-[40px] xl:gap-x-[90px] justify-between items-center'>
             <div className='w-full lg:w-[45%]'>
               <div className='flex items-start'>
@@ -95,7 +95,7 @@ const About = () => {
                 are Indian, Italian and Chinese.
               </p>
             </div>
-            <div className='grid grid-cols-2 w-full max-w-[500px] md:w-[60%] mx-auto lg:mx-0  lg:w-[45%] mt-[82px] sm:mt-[102px] md:mt-[122px] lg:mt-[182px] lg:mt-0 justify-items-center'>
+            <div className='grid grid-cols-2 w-full max-w-[500px] md:w-[60%] mx-auto lg:mx-0  lg:w-[45%] justify-items-center'>
               <motion.img
                 initial={{scale: 0.8}}
                 whileInView={{scale: 1}}
@@ -168,7 +168,7 @@ const About = () => {
               duration: 0.6,
               ease: 'easeOut',
             }}
-            className='flex mt-[76px] sm:mt-[120px] md:mt-[140px] lg:mt-[216px] flex-col lg:flex-row lg:gap-x-[40px] xl:gap-x-[90px] justify-between'
+            className='flex mt-[60px] md:[120px] lg:mt-[127px] flex-col lg:flex-row lg:gap-x-[40px] xl:gap-x-[90px] justify-between'
           >
             <div className='w-full'>
               <div className='flex items-center'>
@@ -196,7 +196,7 @@ const About = () => {
                 different continents
               </p>
             </div>
-            <div className='w-full mt-[76px] sm:mt-[140px] md:mt-[160px] lg:mt-0'>
+            <div className='w-full mt-[60px] md:[120px] lg:mt-0'>
               <div className='flex items-center'>
                 <img
                   src={Microphone}
@@ -251,37 +251,12 @@ const About = () => {
             </div>
             <div className='mt-[30px] sm:mt-[35px] md:mt-[40px] lg:mt-[50px] border border-white border-1 w-[35px]'></div>
           </div>
-          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2Frame 36648.svg lg:grid-cols-3 xl:grid-cols-5 gap-[32px] mt-[70px]'>
-            <div className='w-full h-[336px] rounded-[10px] '>
-              <img
-                src={Book1}
-                className='object-cover w-full h-full max-h-full rounded-[10px]'
-              />
-            </div>
-            <div className='w-full h-[336px] rounded-[10px]'>
-              <img
-                src={Book2}
-                className='object-cover w-full h-full max-h-full rounded-[10px]'
-              />
-            </div>
-            <div className='w-full h-[336px] rounded-[10px]'>
-              <img
-                src={Book3}
-                className='object-cover w-full h-full rounded-[10px] max-h-full'
-              />
-            </div>
-            <div className='w-full h-[336px] rounded-[10px]'>
-              <img
-                src={Book4}
-                className='object-cover w-full h-full max-h-full rounded-[10px]'
-              />
-            </div>
-            <div className='w-full h-[336px] rounded-[10px]'>
-              <img
-                src={Book5}
-                className='object-cover w-full h-full max-h-full rounded-[10px]'
-              />
-            </div>
+          <div className='w-full flex flex-wrap flex-row mt-[70px] gap-x-[1.5%] md:gap-x-[1.5%] gap-y-[20px]'>
+            <div className='w-full sm:w-[30%] md:w-[18%] h-[320px] rounded-[10px] bg-[url("../images/book1.svg")] bg-cover bg-center'></div>
+            <div className='w-full sm:w-[30%] md:w-[18%] h-[320px] rounded-[10px] bg-[url("../images/book2.svg")] bg-cover bg-center'></div>
+            <div className='w-full sm:w-[30%] md:w-[18%] h-[320px] rounded-[10px] bg-[url("../images/book3.svg")] bg-cover bg-center'></div>
+            <div className='w-full sm:w-[30%] md:w-[18%] h-[320px] rounded-[10px] bg-[url("../images/book4.svg")] bg-cover bg-center'></div>
+            <div className='w-full sm:w-[30%] md:w-[18%] h-[320px] rounded-[10px] bg-[url("../images/book5.png")] bg-cover bg-center'></div>
           </div>
         </motion.div>
         <motion.div
@@ -314,37 +289,12 @@ const About = () => {
             </p>
             <div className='mt-[30px] sm:mt-[35px] md:mt-[40px] lg:mt-[50px] border border-white border-1 w-[35px]'></div>
           </div>
-          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-[32px] mt-[70px]'>
-            <div className='w-full h-[336px] rounded-[10px] '>
-              <img
-                src={Pod1}
-                className='object-cover w-full h-full max-h-full rounded-[10px]'
-              />
-            </div>
-            <div className='w-full h-[336px] rounded-[10px]'>
-              <img
-                src={Pod2}
-                className='object-cover w-full h-full max-h-full rounded-[10px]'
-              />
-            </div>
-            <div className='w-full h-[336px] rounded-[10px]'>
-              <img
-                src={Pod3}
-                className='object-cover w-full h-full rounded-[10px] max-h-full'
-              />
-            </div>
-            <div className='w-full h-[336px] rounded-[10px]'>
-              <img
-                src={Pod4}
-                className='object-cover w-full h-full max-h-full rounded-[10px]'
-              />
-            </div>
-            <div className='w-full h-[336px] rounded-[10px]'>
-              <img
-                src={Pod5}
-                className='object-cover w-full h-full max-h-full rounded-[10px]'
-              />
-            </div>
+          <div className='w-full flex flex-wrap flex-row mt-[70px] gap-x-[1.5%] md:gap-x-[1.5%] gap-y-[20px]'>
+            <div className='w-full sm:w-[30%] md:w-[18%] h-[320px] rounded-[10px] bg-[url("../images/pod1.svg")] bg-cover bg-center'></div>
+            <div className='w-full sm:w-[30%] md:w-[18%] h-[320px] rounded-[10px] bg-[url("../images/pod2.svg")] bg-cover bg-center'></div>
+            <div className='w-full sm:w-[30%] md:w-[18%] h-[320px] rounded-[10px] bg-[url("../images/pod3.svg")] bg-cover bg-center'></div>
+            <div className='w-full sm:w-[30%] md:w-[18%] h-[320px] rounded-[10px] bg-[url("../images/pod4.svg")] bg-cover bg-center'></div>
+            <div className='w-full sm:w-[30%] md:w-[18%] h-[320px] rounded-[10px] bg-[url("../images/pod5.svg")] bg-cover bg-center'></div>
           </div>
         </motion.div>
         <motion.div
@@ -377,87 +327,72 @@ const About = () => {
             </p>
             <div className='mt-[30px] sm:mt-[35px] md:mt-[40px] lg:mt-[50px] border border-white border-1 w-[35px]'></div>
           </div>
-          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-[32px] mt-[70px]'>
-            <div className='w-full h-[420px] rounded-[10px] '>
-              <img
-                src={Music1}
-                className='object-cover w-full h-[336px] max-h-full rounded-[10px]'
-              />
+          <div className='w-full flex flex-wrap flex-row mt-[70px] gap-x-[1.5%] md:gap-x-[1.5%] gap-y-[50px]'>
+            <div className='w-full sm:w-[30%] md:w-[18%] rounded-[10px]'>
+              <div className='h-[320px] rounded-[10px] bg-[url("../images/music1.svg")] bg-cover bg-center'></div>
               <a
                 target='_blank'
                 href='https://open.spotify.com/playlist/6be0keisznbaU6WKkdvW2c?si=b316bb5e154841db&nd=1'
               >
-                <div className='flex mt-[20px] md:mt-[30px] lg:mt-[40px] gap-[8px]'>
+                <div className='w-max flex mt-[30px] lg:mt-[40px] gap-[8px]'>
                   <p className='underline text-lemon text-[13px] md:text-[14px] lg:text-[15px] font-mono font-medium'>
-                    Play on Spotify
+                    Listen
                   </p>
                   <img src={Arrow} width={24} height={24} />
                 </div>
               </a>
             </div>
-            <div className='w-full h-[420px] rounded-[10px]'>
-              <img
-                src={Music2}
-                className='object-cover w-full h-[336px] max-h-full rounded-[10px]'
-              />
+            <div className='w-full sm:w-[30%] md:w-[18%] rounded-[10px]'>
+              <div className=' h-[320px] rounded-[10px] bg-[url("../images/music2.jpeg")] bg-cover bg-center'></div>
               <a
                 target='_blank'
                 href='https://open.spotify.com/playlist/6be0keisznbaU6WKkdvW2c?si=b316bb5e154841db&nd=1'
               >
-                <div className='flex mt-[20px] md:mt-[30px] lg:mt-[40px] gap-[8px]'>
+                <div className='w-max flex mt-[30px] lg:mt-[40px] gap-[8px]'>
                   <p className='underline text-lemon text-[13px] md:text-[14px] lg:text-[15px] font-mono font-medium'>
-                    Play on Spotify
+                    Listen
                   </p>
                   <img src={Arrow} width={24} height={24} />
                 </div>
               </a>
             </div>
-            <div className='w-full h-[420px] rounded-[10px]'>
-              <img
-                src={Music3}
-                className='object-cover w-full h-[336px] rounded-[10px] max-h-full'
-              />
+            <div className='w-full sm:w-[30%] md:w-[18%] rounded-[10px]'>
+              <div className=' h-[320px] rounded-[10px] bg-[url("../images/music3.jpeg")] bg-cover bg-center'></div>
               <a
                 target='_blank'
                 href='https://open.spotify.com/playlist/0fwYgTrDHYuRpyWKVN9ptp?si=dded9d88c5af4635&nd=1'
               >
-                <div className='flex mt-[20px] md:mt-[30px] lg:mt-[40px] gap-[8px]'>
+                <div className='w-max flex mt-[30px] lg:mt-[40px] gap-[8px]'>
                   <p className='underline text-lemon text-[13px] md:text-[14px] lg:text-[15px] font-mono font-medium'>
-                    Play on Spotify
+                    Listen
                   </p>
                   <img src={Arrow} width={24} height={24} />
                 </div>
               </a>
             </div>
-            <div className='w-full h-[420px] rounded-[10px]'>
-              <img
-                src={Music4}
-                className='object-cover w-full h-[336px] max-h-full rounded-[10px]'
-              />
+            <div className='w-full sm:w-[30%] md:w-[18%] rounded-[10px]'>
+              <div className='h-[320px] rounded-[10px] bg-[url("../images/music4.jpeg")] bg-cover bg-center'></div>
               <a
                 target='_blank'
                 href='https://open.spotify.com/playlist/37i9dQZF1DWWxPM4nWdhyI?si=3c74330a1d434585&nd=1'
               >
-                <div className='flex mt-[20px] md:mt-[30px] lg:mt-[40px] gap-[8px]'>
+                <div className='w-max flex mt-[30px] lg:mt-[40px] gap-[8px]'>
                   <p className='underline text-lemon text-[13px] md:text-[14px] lg:text-[15px] font-mono font-medium'>
-                    Play on Spotify
+                    Listen
                   </p>
                   <img src={Arrow} width={24} height={24} />
                 </div>
               </a>
             </div>
-            <div className='w-full h-[420px] rounded-[10px]'>
-              <img
-                src={Music5}
-                className='object-cover w-full h-[336px] max-h-full rounded-[10px]'
-              />
+            <div className='w-full sm:w-[30%] md:w-[18%] rounded-[10px]'>
+              <div className='h-[320px] rounded-[10px] bg-[url("../images/music5.svg")] bg-cover bg-center'></div>
               <a
                 target='_blank'
                 href='https://open.spotify.com/playlist/6be0keisznbaU6WKkdvW2c?si=b316bb5e154841db&nd=1'
               >
-                <div className='flex mt-[20px] md:mt-[30px] lg:mt-[40px] gap-[8px]'>
+                <div className='w-max flex mt-[30px] lg:mt-[40px] gap-[8px]'>
                   <p className='underline text-lemon text-[13px] md:text-[14px] lg:text-[15px] font-mono font-medium'>
-                    Play on Spotify
+                    Listen
                   </p>
                   <img src={Arrow} width={24} height={24} />
                 </div>

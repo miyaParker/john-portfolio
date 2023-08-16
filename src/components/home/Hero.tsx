@@ -8,7 +8,7 @@ const Hero = () => {
       initial={{opacity: 0}}
       whileInView={{opacity: 1}}
       transition={{type: 'tween', delay: 0.2, duration: 0.4, ease: 'easeOut'}}
-      className='h-max mb-[80px] px-[20px] md:px-[40px] lg:px-[80px] xl:px-[120px] 2xl:px-[204px] pt-[120px] md:pt-[200px] lg:pt-[300px]'
+      className='h-max mb-[80px] px-[20px] md:px-[40px] lg:px-[80px] xl:px-[120px] 2xl:px-[204px] pt-[120px] md:pt-[200px] lg:pt-[250px]'
     >
       <motion.p
         initial={{opacity: 0, overflow: '50%', y: 30}}

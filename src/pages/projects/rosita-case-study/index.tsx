@@ -286,7 +286,7 @@ const Rosita = () => {
                 </p>
               </div>
               <div>
-                <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
+                <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[138%] text-white'>
                   Opportunity
                 </h2>
                 <p className='max-w-[603px] font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] leading-[138%] md:text-[24px] lg:text-[28px]'>

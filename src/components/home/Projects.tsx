@@ -15,7 +15,7 @@ const Projects = () => {
       transition={{type: 'tween', duration: 0.6, ease: 'easeOut'}}
       className='px-[20px] md:px-[40px] lg:px-[80px] xl:px-[120px] 2xl:px-[204px]'
     >
-      <p className='pt-[120px] pt-[200px] lg:pt-[300px] text-center uppercase font-mono lg:text-[18px] text-lemon uppercase mb-[20px] font-mono leading-[28px]'>
+      <p className='pt-[120px] pt-[200px] lg:pt-[250px] text-center uppercase font-mono lg:text-[18px] text-lemon uppercase mb-[20px] font-mono leading-[28px]'>
         MY PROJECTS
       </p>
       <h2 className='font-calibre max-w-[688px] mx-auto text-[50px] md:text-[60px] lg:text-[70px] leading-[120%] font-bold text-white text-center'>

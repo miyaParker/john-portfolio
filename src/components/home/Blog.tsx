@@ -19,7 +19,7 @@ const Blog = () => {
       <h2 className='font-calibre max-w-[688px] mx-auto text-[50px] md:text-[60px] lg:text-[70px] leading-[120%] font-bold text-white text-center'>
         How I Detail My Writings And Thoughts
       </h2>
-      <div className='w-full md:max-w-max mt-[50px] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mx-auto gap-x-[11px] gap-y-[14px]'>
+      <div className='w-full md:max-w-max mt-[50px] grid grid-cols-1 md:grid-cols-2 min-[1240px]:grid-cols-3 mx-auto gap-x-[11px] gap-y-[14px]'>
         <div className='w-full xl:w-[389px] flex flex-col'>
           <div className='w-full md:max-w-[389px] h-[232px]'>
             <img

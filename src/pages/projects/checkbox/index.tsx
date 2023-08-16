@@ -26,7 +26,7 @@ const Rosita = () => {
   return (
     <ProjectLayout>
       <div className=''>
-        <motion.div className='relative w-full h-[640px] bg-white overflow-hidden relative top-[-120px] bg-fixed bg-[url("../images/commute-hero.jpg")]'>
+        <motion.div className='relative w-full h-[640px] bg-white overflow-hidden relative top-[-120px] bg-fixed bg-contain bg-left-top bg-[url("../images/checkbox.jpg")]'>
           <div className='w-full h-full absolute z-10 bg-black opacity-80 top-0 bottom-0 left-0 right-0'></div>
         </motion.div>
         <div className='absolute top-[180px] lg:top-[245px] z-20 w-full  px-[20px] md:px-[40px] lg:px-[80px]'>
