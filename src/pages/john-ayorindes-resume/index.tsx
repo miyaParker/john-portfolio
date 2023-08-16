@@ -10,8 +10,12 @@ import Dribbble from '../../images/dribbble.svg';
 
 const Resume = () => {
   const handleDownload = () => {
-    fetch('../../data/John-Resume', {
+    fetch('/John-Resume.pdf', {
       method: 'GET',
+      headers: {
+        'Content-Type': 'application/pdf',
+        Accept: 'application/pdf',
+      },
     })
       .then((res) => res.blob())
       .then((blob) => {
