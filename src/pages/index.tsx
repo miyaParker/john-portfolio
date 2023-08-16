@@ -27,10 +27,21 @@ const IndexPage: React.FC<PageProps> = () => {
           }}
           className='flex flex-col gap-[30px] fixed left-[40px] 2xl:left-[70px] bottom-[40px] items-center'
         >
-          <img src={Instagram} width={24} height={24} />
-          <img src={LinkedIn} width={24} height={24} />
-          <img src={Twitter} width={24} height={24} />
-          <img src={Dribbble} width={24} height={24} />
+          <a
+            target='_blank'
+            href='https://instagram.com/mztatobey?igshid=OGQ5ZDc2ODk2ZA=='
+          >
+            <img src={Instagram} width={24} height={24} />
+          </a>
+          <a target='_blank' href='https://www.linkedin.com/in/olarinde-john/'>
+            <img src={LinkedIn} width={24} height={24} />
+          </a>
+          <a target='_blank' href='https://twitter.com/mztatobey'>
+            <img src={Twitter} width={24} height={24} />
+          </a>
+          <a target='_blank' href='https://dribbble.com/Mztatobey'>
+            <img src={Dribbble} width={24} height={24} />
+          </a>
           <div className='h-[204px] w-[2px] bg-white'></div>
         </motion.div>
         <motion.div
