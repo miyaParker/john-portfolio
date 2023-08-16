@@ -106,7 +106,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Introducing Rosita Mobile App
@@ -175,7 +175,7 @@ const Rosita = () => {
                 </div>
               </div>
             </motion.div>
-            <div className='mt-[128px] flex flex-col lg:flex-row gap-[18px] justify-between lg:items-center'>
+            <div className='mt-[60px] md:mt-[80px] mt-[128px] flex flex-col lg:flex-row gap-[18px] justify-between lg:items-center'>
               <div>
                 <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                   The Challenge
@@ -269,7 +269,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px] flex flex-col lg:flex-row gap-[18px] justify-between'
+              className='mt-[60px] md:mt-[80px] mt-[128px] flex flex-col lg:flex-row gap-[18px] justify-between'
             >
               <div>
                 <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[138%] text-white'>
@@ -308,7 +308,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Hypothesis Statement
@@ -333,7 +333,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Conducting Desk Research
@@ -352,7 +352,7 @@ const Rosita = () => {
               />
             </motion.div>
 
-            <div className='mt-[128px]'>
+            <div className='mt-[60px] md:mt-[80px] mt-[128px]'>
               <motion.h2
                 initial={{opacity: 0, y: 100}}
                 whileInView={{opacity: 1, y: 0}}
@@ -476,7 +476,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Insights from the research
@@ -499,7 +499,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Feature Prioritization
@@ -522,7 +522,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Competitive Audit
@@ -557,7 +557,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Conducting Desk Research
@@ -586,7 +586,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Constraints
@@ -612,7 +612,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Sitemap
@@ -630,8 +630,8 @@ const Rosita = () => {
               </p>
             </motion.div>
 
-            <div className='mt-[128px] flex flex-col lg:flex-row gap-[18px] justify-between'>
-              <h2 className='self-start top-10 lg:sticky z-10 font-calibre font-semibold lg:min-w-max text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
+            <div className='mt-[60px] md:mt-[80px] mt-[128px] flex flex-col lg:flex-row gap-[18px] justify-between'>
+              <h2 className='self-start top-[80px] lg:sticky z-10 font-calibre font-semibold lg:min-w-max text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Designing the Solution
               </h2>
               <div className='font-calibre'>
@@ -651,8 +651,8 @@ const Rosita = () => {
                 />
               </div>
             </div>
-            <div className='mt-[128px] flex flex-col lg:flex-row gap-[18px] justify-between'>
-              <h2 className='self-start top-10 lg:sticky z-10 font-calibre font-semibold lg:min-w-max text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
+            <div className='mt-[60px] md:mt-[80px] mt-[128px] flex flex-col lg:flex-row gap-[18px] justify-between'>
+              <h2 className='self-start top-[80px] lg:sticky z-10 font-calibre font-semibold lg:min-w-max text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Final Solution
               </h2>
               <p className='max-w-[750px] font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] md:text-[24px] lg:text-[28px]'>
@@ -671,7 +671,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Registration
@@ -702,7 +702,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 End-to-End Screens
@@ -859,7 +859,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Usability Testing
@@ -977,9 +977,9 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px] flex flex-col lg:flex-row gap-[18px] justify-between'
+              className='mt-[60px] md:mt-[80px] mt-[128px] flex flex-col lg:flex-row gap-[18px] justify-between'
             >
-              <h2 className='self-start top-10 lg:sticky z-10 font-calibre font-semibold lg:min-w-max text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
+              <h2 className='self-start top-[80px] lg:sticky z-10 font-calibre font-semibold lg:min-w-max text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Major Takeaways
               </h2>
               <motion.div

@@ -48,7 +48,7 @@ const About = () => {
         >
           <div className='w-full lg:w-[38%] h-[400px] md:h-[520px] lg:h-[654px] rounded-[10px] bg-center sm:bg-[center_top_-3rem] md:bg-[center_top_-5rem] lg:bg-center bg-cover h-[430px] bg-[url("../images/john.png")]'></div>
           <div className='w-full lg:w-[55%]'>
-            <p className='mt-[82px] lg:mt-0 uppercase font-mono lg:text-[18px] text-lemon uppercase mb-[20px] font-mono leading-[28px]'>
+            <p className='mt-[40px] md:mt-[60px] mt-[82px] lg:mt-0 uppercase font-mono lg:text-[18px] text-lemon uppercase mb-[20px] font-mono leading-[28px]'>
               A LITTLE ABOUT ME
             </p>
             <h2 className='font-calibre w-[full] text-[42px] leading-[52px] md:text-[50px] lg:text-[60px] xl:text-[70px] md:leading-[60px] lg:leading-[72px] xl:leading-[84px] font-bold text-white'>

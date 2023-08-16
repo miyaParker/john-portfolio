@@ -90,7 +90,7 @@ const Rosita = () => {
                 ease: 'easeOut',
               }}
             >
-              <h2 className='mt-[128px] font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[138%] text-white'>
+              <h2 className='mt-[60px] md:mt-[80px] mt-[128px] font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[138%] text-white'>
                 The Challenge
               </h2>
               <p className='w-full font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] leading-[138%] md:text-[24px] lg:text-[28px]'>
@@ -119,7 +119,7 @@ const Rosita = () => {
                 ease: 'easeOut',
               }}
             >
-              <h2 className='font-calibre mt-[128px] font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[138%] text-white'>
+              <h2 className='font-calibre mt-[60px] md:mt-[80px] mt-[128px] font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[138%] text-white'>
                 The Solution
               </h2>
               <p className='w-full font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] leading-[138%] md:text-[24px] lg:text-[28px]'>
@@ -208,7 +208,7 @@ const Rosita = () => {
                 duration: 0.5,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Design Process
@@ -221,7 +221,7 @@ const Rosita = () => {
               />
             </motion.div>
 
-            <div className='mt-[128px]'>
+            <div className='mt-[60px] md:mt-[80px] mt-[128px]'>
               <motion.h2
                 initial={{opacity: 0, y: 100}}
                 whileInView={{opacity: 1, y: 0}}
@@ -282,7 +282,7 @@ const Rosita = () => {
                 </motion.p>
               </div>
             </div>
-            <div className='mt-[128px]'>
+            <div className='mt-[60px] md:mt-[80px] mt-[128px]'>
               <motion.h2
                 initial={{opacity: 0, y: 100}}
                 whileInView={{opacity: 1, y: 0}}
@@ -332,7 +332,7 @@ const Rosita = () => {
                 the key problem areas. This can be seen HERE
               </motion.p>
             </div>
-            <div className='mt-[128px]'>
+            <div className='mt-[60px] md:mt-[80px] mt-[128px]'>
               <motion.h2
                 initial={{opacity: 0, y: 100}}
                 whileInView={{opacity: 1, y: 0}}
@@ -419,7 +419,7 @@ const Rosita = () => {
                 duration: 0.5,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Solutions and App Features
@@ -458,7 +458,7 @@ const Rosita = () => {
                 duration: 0.5,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 User Persona and Empathy Map
@@ -482,7 +482,7 @@ const Rosita = () => {
                 duration: 0.5,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 User flow and Sitemap
@@ -506,7 +506,7 @@ const Rosita = () => {
                 duration: 0.5,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold lg:min-w-max text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Low-fidelity Wireframe
@@ -529,7 +529,7 @@ const Rosita = () => {
                 duration: 0.5,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold lg:min-w-max text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Onboarding Screens
@@ -557,7 +557,7 @@ const Rosita = () => {
                 duration: 0.5,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Authentication
@@ -585,7 +585,7 @@ const Rosita = () => {
                 duration: 0.5,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Home Screen
@@ -625,7 +625,7 @@ const Rosita = () => {
                 duration: 0.5,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Blood Test Questions
@@ -666,7 +666,7 @@ const Rosita = () => {
                 duration: 0.5,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Result of Test Questions
@@ -697,7 +697,7 @@ const Rosita = () => {
                 duration: 0.5,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Donor Section
@@ -734,7 +734,7 @@ const Rosita = () => {
                 duration: 0.5,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Profile Section
@@ -770,7 +770,7 @@ const Rosita = () => {
                 duration: 0.5,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Schedule Appointment
@@ -807,7 +807,7 @@ const Rosita = () => {
                 duration: 0.5,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Logo
@@ -838,7 +838,7 @@ const Rosita = () => {
                 duration: 0.5,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Typography
@@ -860,7 +860,7 @@ const Rosita = () => {
                 duration: 0.5,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Color
@@ -872,7 +872,7 @@ const Rosita = () => {
                 className='w-full max-w-[936px] mt-[40px] mx-auto'
               />
             </motion.div>
-            <div className='mt-[128px]'>
+            <div className='mt-[60px] md:mt-[80px] mt-[128px]'>
               <motion.h2
                 initial={{opacity: 0, y: 100}}
                 whileInView={{opacity: 1, y: 0}}
@@ -927,7 +927,7 @@ const Rosita = () => {
                 perspective and the visual perspective.
               </motion.p>
             </div>
-            <div className='mt-[128px]'>
+            <div className='mt-[60px] md:mt-[80px] mt-[128px]'>
               <motion.h2
                 initial={{opacity: 0, y: 100}}
                 whileInView={{opacity: 1, y: 0}}

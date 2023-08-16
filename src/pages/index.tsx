@@ -16,7 +16,7 @@ import {motion} from 'framer-motion';
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <Layout pathName='/'>
-      <div className='hidden lg:block max-w-[2560px]:hidden'>
+      <div className='hidden lg:block max-w-[1962px]:hidden'>
         <motion.div
           initial={{opacity: 0, y: 50}}
           whileInView={{opacity: 1, y: 0}}

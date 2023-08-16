@@ -100,7 +100,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Introducing Easy Commute
@@ -184,7 +184,7 @@ const Rosita = () => {
                 ease: 'easeOut',
               }}
             >
-              <h2 className='mt-[128px] font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[138%] text-white'>
+              <h2 className='mt-[60px] md:mt-[80px] mt-[128px] font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[138%] text-white'>
                 Defining the problem
               </h2>
               <p className='w-full font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] leading-[138%] md:text-[24px] lg:text-[28px]'>
@@ -208,7 +208,7 @@ const Rosita = () => {
                 ease: 'easeOut',
               }}
             >
-              <h2 className='font-calibre mt-[128px] font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[138%] text-white'>
+              <h2 className='font-calibre mt-[60px] md:mt-[80px] mt-[128px] font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[138%] text-white'>
                 Problem Statement
               </h2>
               <p className='w-full font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] leading-[138%] md:text-[24px] lg:text-[28px]'>
@@ -236,7 +236,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Final Outcome
@@ -263,7 +263,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Conducting Desk Research
@@ -330,7 +330,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 User Research
@@ -371,7 +371,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Affinity Mapping
@@ -427,7 +427,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Feature Prioritization
@@ -455,7 +455,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Constraints
@@ -481,7 +481,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold lg:min-w-max  text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Solution
@@ -558,7 +558,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Core Taskflow
@@ -597,7 +597,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Component Library and UI Explorations
@@ -621,7 +621,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Icons and Illustrations
@@ -650,7 +650,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Wireframe - Initial Sketches
@@ -693,7 +693,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Onboarding Screens
@@ -722,7 +722,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Book a Train
@@ -766,7 +766,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Payment Method
@@ -813,7 +813,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Verify Documents
@@ -866,7 +866,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Go-to-Market Strategy
@@ -898,7 +898,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Style Guide and Colors
@@ -1020,7 +1020,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Logo
@@ -1042,7 +1042,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Typography
@@ -1064,7 +1064,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Product KPIs and Success Metrics
@@ -1086,7 +1086,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Validation
@@ -1115,7 +1115,7 @@ const Rosita = () => {
                 duration: 0.6,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Aftermath

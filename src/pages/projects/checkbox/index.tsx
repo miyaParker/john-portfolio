@@ -170,7 +170,7 @@ const Rosita = () => {
                 ease: 'easeOut',
               }}
             >
-              <h2 className='mt-[128px] font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[138%] text-white'>
+              <h2 className='mt-[60px] md:mt-[80px] mt-[128px] font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[138%] text-white'>
                 Solution
               </h2>
               <p className='w-full font-calibre font-thin leading-[150%] mt-[13px] text-gray text-[22px] leading-[138%] md:text-[24px] lg:text-[28px]'>
@@ -212,7 +212,7 @@ const Rosita = () => {
                 ease: 'easeOut',
               }}
             >
-              <h2 className='font-calibre mt-[128px] font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[138%] text-white'>
+              <h2 className='font-calibre mt-[60px] md:mt-[80px] mt-[128px] font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[138%] text-white'>
                 Design Thinking Process
               </h2>
               <img
@@ -224,7 +224,7 @@ const Rosita = () => {
             </motion.div>
 
             <motion.div
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
               initial={{opacity: 0, y: '10vh'}}
               whileInView={{opacity: 1, y: 0}}
               viewport={{once: true}}
@@ -262,7 +262,7 @@ const Rosita = () => {
                 duration: 0.5,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Flowchart
@@ -285,7 +285,7 @@ const Rosita = () => {
                 duration: 0.5,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Wireframes
@@ -338,7 +338,7 @@ const Rosita = () => {
                 duration: 0.5,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Main Dashboard
@@ -368,7 +368,7 @@ const Rosita = () => {
                 duration: 0.5,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Payroll
@@ -399,7 +399,7 @@ const Rosita = () => {
                 duration: 0.5,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold lg:min-w-max text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Company Structure
@@ -428,7 +428,7 @@ const Rosita = () => {
                 duration: 0.5,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold lg:min-w-max text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Performance Management
@@ -460,7 +460,7 @@ const Rosita = () => {
                 duration: 0.5,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Report
@@ -488,7 +488,7 @@ const Rosita = () => {
                 duration: 0.5,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Projects
@@ -540,7 +540,7 @@ const Rosita = () => {
                 duration: 0.5,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Accessories Management
@@ -576,7 +576,7 @@ const Rosita = () => {
                 duration: 0.5,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Notifications
@@ -605,7 +605,7 @@ const Rosita = () => {
                 duration: 0.5,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Leave Management
@@ -642,7 +642,7 @@ const Rosita = () => {
                 duration: 0.5,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Logo
@@ -673,7 +673,7 @@ const Rosita = () => {
                 duration: 0.5,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Typography
@@ -695,7 +695,7 @@ const Rosita = () => {
                 duration: 0.5,
                 ease: 'easeOut',
               }}
-              className='mt-[128px]'
+              className='mt-[60px] md:mt-[80px] mt-[128px]'
             >
               <h2 className='font-calibre font-semibold w-[full] text-[32px] md:text-[38px] lg:text-[40px] leading-[200%] text-white'>
                 Conclusion
